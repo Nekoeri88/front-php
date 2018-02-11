@@ -10,7 +10,7 @@ return [
     'roadMap' => 'ロードマップ',
     'whitePaper' => 'ホワイトペーパー',
     'wallet' => 'ウォレット',
-    'exchanges' => '両替',
+    'exchanges' => '取引所',
     'community' => 'コミュニティ',
     'whatIsNanJ' => 'NANJとは？',
     'whatIsNanJDescription' =>
@@ -28,6 +28,7 @@ return [
     'comingSoon' => 'しばらくお待ちください。',
     'preSeason' => 'オープン戦',
     'operation' => '運営チーム',
+    'lockUp' => 'ロックアップ',
     'advertisementFee' => '広告宣伝活動費',
     'nanjMean' => '<strong>N</strong>EXT-GENERATION <strong>A</strong>THLETE <strong>N</strong>ETWORK <strong>J</strong>OINT',
     'nanjMean2' => '<strong>E</strong>THEREUM <strong>E</strong>RC223 <strong>T</strong>OKEN <strong>F</strong>ULLY <strong>C</strong>OMPATIBLE <strong>W</strong>ITH <strong>E</strong>RC20 <strong>T</strong>OKEN <strong>S</strong>TANDARD',
