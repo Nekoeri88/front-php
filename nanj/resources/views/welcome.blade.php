@@ -47,10 +47,10 @@
                 <div class="col-md-10 col-sm-7 col-9">
                     <h1><img src="img/header_img_01.png" alt="NANJ"><span>{{__('message.coinName')}}</span></h1>
                     <ul class="nav d-none d-md-block">
-                        <li class="btn_top"><a href="#top">{{__('message.top')}}</a></li>
+                        <li class="btn_top">{{__('message.top')}}</li>
                         <li class="btn_nav"><a href="#about">{{__('message.about')}}</a></li>
-                        <li class="btn_nav"><a href="#roadMap">{{__('message.roadMap')}}</a></li>
-                        <li class="btn_nav"><a href="#whitePaper">{{__('message.whitePaper')}}</a></li>
+                        <li class="btn_nav"><a href="#roadmap">{{__('message.roadMap')}}</a></li>
+                        <li class="btn_nav"><a href="#group01">{{__('message.whitePaper')}}</a></li>
                         <li class="btn_nav"><a href="#wallet">{{__('message.wallet')}}</a></li>
                         <li class="btn_nav"><a href="#exchanges">{{__('message.exchanges')}}</a></li>
                         <li class="btn_nav"><a href="#community">{{__('message.community')}}</a></li>
