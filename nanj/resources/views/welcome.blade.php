@@ -9,7 +9,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'UA-113806697-1');
     </script>
     <meta charset="utf-8">
@@ -29,7 +28,8 @@
     <meta name="twitter:url" content="https://twitter.com/nanjcoin?lang=ja">
     <meta name="twitter:description" content="仮想通貨NANJCOINに関するニュースを配信しています。">
     <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/953930012725362688/e_1u74_u_400x400.jpg">
-    <title>NANJ COIN</title>
+    <meta name="google-site-verification" content="HBXkITJ9F1LFI1Ki6nfhnZ8FjpyNLqhg-WoquAj_kIs" />
+    <title>{{__('message.coinName')}}</title>
     <link rel="canonical" href="http://nanjcoin.com/">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Sarpanch">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -45,7 +45,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-sm-7 col-9">
-                    <h1><img src="img/header_img_01.png" alt="NANJ"><span>NANJ COIN</span></h1>
+                    <h1><img src="img/header_img_01.png" alt="NANJ"><span>{{__('message.coinName')}}</span></h1>
                     <ul class="nav d-none d-md-block">
                         <li class="btn_top">{{__('message.top')}}</li>
                         <li class="btn_nav">{{__('message.about')}}</li>
@@ -57,7 +57,12 @@
                     </ul>
                 </div>
                 <div class="col-md-2 col-sm-5 col-3 language">
-                    <p> <a href="/ja/"><span class="text">日本語</span><span class="image"><img src="img/language_img_01.png" alt="日本語"></span></a>
+                    <p>
+                        <a href="/ja/">
+                            <span class="text">日本語</span><span class="image">
+                                <img src="img/language_img_01.png" alt="日本語">
+                            </span>
+                        </a>
                     </p>
                     <ul>
                         {{--<li><a href="/ja/"><span class="text">日本語</span><span class="image"><img src="img/language_img_01.png" alt="日本語"></span></a></li>--}}
@@ -69,9 +74,9 @@
             <div class="row">
                 <div class="col-lg-12 fv">
                     <div class="text">
-                        <h2>NANJ COIN</h2>
-                        <p class="p01"> <strong>N</strong>EXT-GENERATION <strong>A</strong>THLETE <strong>N</strong>ETWORK <strong>J</strong>OINT</p>
-                        <p class="p02"><strong>E</strong>THEREUM <strong>E</strong>RC223 <strong>T</strong>OKEN <strong>F</strong>ULLY <strong>C</strong>OMPATIBLE <strong>W</strong>ITH <strong>E</strong>RC20 <strong>T</strong>OKEN <strong>S</strong>TANDARD</p>
+                        <h2>{{__('message.coinName')}}</h2>
+                        <p class="p01">{!!__('message.nanjMean') !!}</p>
+                        <p class="p02">{!!__('message.nanjMean2') !!}</p>
                     </div>
                     <div class="image"><img src="img/header_img_02.png" alt="NANJ COIN"></div>
                 </div>
@@ -84,23 +89,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-4">
-                    <h2>ABOUT</h2>
-                    <p class="p01">NANJは5ch上の「なんでも実況J板」、通称「なんJ」発祥のEthereumトークンです。なんJの有志により開発、運営されています。スポーツ大好き（特に野球）なんJ民が作り上げた日本国産『NANJ』は、世界的にも珍しいスポーツに特化したEthereumトークンです。日本のネットカルチャーにおいて多大なる影響力を持つなんJコミュニティのバックアップのもと、将来的にNANJは様々なスポーツ関連分野での決済手段や、選手やチームに対する寄付の手段として役割を果たす予定です。2018年1月末より無料配布期間を経たのちに海外取引所に上場、その後オープン戦（プレセール）を行います。</p>
+                    <h2>{{__('message.about')}}</h2>
+                    <p class="p01">{{__('message.whatIsNanJDescription')}}</p>
                     <div class="row row01">
                         <div class="col-md-6 detail">
-                            <h3>トークンの詳細</h3>
+                            <h3>{{__('message.tokenDetail')}}</h3>
                             <div class="clearfix">
                                 <p class="image"><img src="img/about_img_01.png" alt="NANJ"></p>
                                 <ul>
-                                    <li>トークン名： NANJCOIN</li>
-                                    <li>トークンシンボル： NANJ</li>
-                                    <li>発行枚数： 300億</li>
+                                    <li>{{__('message.tokenName')}}</li>
+                                    <li>{{__('message.tokenSymbol')}}</li>
+                                    <li>{{__('message.issueNumber')}}</li>
                                 </ul>
                             </div>
-                            <p>NANJはスポーツをもっと楽しむというテーマのもと、スポーツに関連する決済手段として提携先を拡大していきます。NANJを使えば普通に買い物をするよりもお得になったり、特別な特典があったりといった状況を実現します。また、資金繰りに困るスポーツ選手や団体、例えば国内で支持層の少ないスポーツや地域のスポーツクラブなどへの寄付が手軽にできるようなシステムとも連携します。（Stage3以降）また、NANJはコミュニティ内でのvote機能の投票権利としても活用される予定です。将来的にはこのvote機能を使って実際のスポーツチームの運営等も行える世界を目指します。</p>
+                            <p>{{__('message.whatIsNanJDescription2')}}</p>
                         </div>
                         <div class="col-md-6 allocation">
-                            <h3>トークンの割当</h3>
+                            <h3>{{__('message.tokenAssign')}}</h3>
                             <div class="glaph">
                                 <div class="row">
                                     <div class="col-xl-5 offset-xl-0 col-lg-6 offset-lg-3 col-sm-4 offset-sm-1 col-6 offset-3" id="aboutGlaphWrapper">
@@ -108,15 +113,15 @@
                                     </div>
                                     <div class="col-xl-7 offset-xl-0 col-lg-10 offset-lg-1 col-sm-7 offset-sm-0">
                                         <ul>
-                                            <li class="li01">オープン戦...55％</li>
-                                            <li class="li02">運営チーム...<strong>25％</strong></li>
-                                            <li class="li03">ロックアップ...10％</li>
-                                            <li class="li04">広告宣伝活動費...10％</li>
+                                            <li class="li01">{{__('message.preSeason')}}...50％</li>
+                                            <li class="li02">{{__('message.operation')}}...<strong>25％</strong></li>
+                                            <li class="li03">{{__('message.lockUp')}}...10％</li>
+                                            <li class="li04">{{__('message.tokenName')}}...15％</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <p>今までの草コインは「運営チーム」の所持割合が不透明なものが多く、過半数を所持しているようなものが大半でした。そこでNANJは運営チームの所持割合を明確にし、<strong>半数のさらに半数である25％としました。</strong>これによるメリットは透明性の確保、そして仮に運営チームが売り抜けたとしても過半数を超えていないため相場が崩壊しません。もちろん一気に売り抜けて相場を乱すような行為はしないと明言した上で、2重の対策となります。</p>
+                            <p>{!! __('message.assignDescription') !!}</p>
                         </div>
                     </div>
                 </div>
@@ -127,8 +132,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>ROADMAP</h2>
-                    <p class="p01">ファンとスポーツの関わり方について、新たなステージを見てみたいとは思いませんか？NANJプロジェクトはプロのマーケティング集団監修のもと、実現可能なステップを進めながら着実に価値を高め続けます。</p>
+                    <h2>{{__('message.roadMap')}}</h2>
+                    <p class="p01">{{__('message.roadMapDescription')}}</p>
                     <p><img class="mw-100 d-none d-lg-block" src="img/roadmap_img_01.png" alt="ROADMAP"><img class="mw-100 d-md-block d-lg-none" src="img/roadmap_img_01_sp.png" alt="ROADMAP"></p>
                 </div>
             </div>
@@ -138,18 +143,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4" id="whitepaper">
-                    <h2>WHITEPAPER</h2>
+                    <h2>{{__('message.whitePaper')}}</h2>
                     <p>
                         <!--: a(href='' target='_blank')--><img src="img/whitepaper_btn_01_da.png" alt="DOWNLOAD">
                     </p>
                 </div>
                 <div class="col-lg-4" id="wallet">
-                    <h2>WALLET</h2>
+                    <h2>{{__('message.wallet')}}</h2>
                     <p><a href="https://www.myetherwallet.com" target="_blank"><img src="img/wallet_btn_01.png" alt="MyEtherWallet"></a></p>
-                    <p>コントラクトアドレス ： 0xFFE02ee4C69eDf1b340fCaD64fbd6b37a7b9e265<br>トークンシンボル ： NANJ　桁数 ： 8</p>
+                    <p>{{__('message.contractAddress')}}<br>{{__('message.tokenSymbol')}}　{{__('message.numberOfDigits')}}</p>
                 </div>
                 <div class="col-lg-4" id="exchanges">
-                    <h2>EXCHANGES</h2>
+                    <h2>{{__('message.exchanges')}}</h2>
                     <p>Coming<br>Soon!</p>
                 </div>
             </div>
@@ -159,7 +164,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>COMMUNITY</h2>
+                    <h2>{{__('message.community')}}</h2>
                 </div>
             </div>
             <div class="row">
