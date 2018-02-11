@@ -151,7 +151,7 @@
                 <div class="col-lg-4" id="wallet">
                     <h2>{{__('message.wallet')}}</h2>
                     <p><a href="https://www.myetherwallet.com" target="_blank"><img src="img/wallet_btn_01.png" alt="MyEtherWallet"></a></p>
-                    <p>{{__('message.contractAddress')}}<br>{{__('message.tokenSymbol')}}　{{__('message.numberOfDigits')}}</p>
+                    <p>{!! __('message.contractAddress') !!}<br>{{__('message.tokenSymbol')}}　{{__('message.numberOfDigits')}}</p>
                 </div>
                 <div class="col-lg-4" id="exchanges">
                     <h2>{{__('message.exchanges')}}</h2>
