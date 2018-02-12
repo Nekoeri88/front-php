@@ -66,8 +66,8 @@
                     </p>
                     <ul>
                         {{--<li><a href="/ja/"><span class="text">日本語</span><span class="image"><img src="img/language_img_01.png" alt="日本語"></span></a></li>--}}
-                        {{--<li><a href="/ja/"><span class="text">日本語</span><span class="image"><img src="img/language_img_01.png" alt="日本語"></span></a></li>--}}
-                        {{--<li><a href="/ja/"><span class="text">日本語</span><span class="image"><img src="img/language_img_01.png" alt="日本語"></span></a></li>--}}
+                        {{--<li><a href="/ja/"><span class="text">英語</span><span class="image"><img src="img/language_img_01.png" alt="英語"></span></a></li>--}}
+                        {{--<li><a href="/ja/"><span class="text">中国語</span><span class="image"><img src="img/language_img_01.png" alt="中国語"></span></a></li>--}}
                     </ul>
                 </div>
             </div>
