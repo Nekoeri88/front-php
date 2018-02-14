@@ -116,7 +116,7 @@
                                             <li class="li01">{{__('message.preSeason')}}...60％</li>
                                             <li class="li02">{{__('message.operation')}}...<strong>10％</strong></li>
                                             <li class="li03">{{__('message.advertisementFee')}}...15％</li>
-                                            <li class="li04">開発費...<strong>15％</strong></li>
+                                            <li class="li04">開発費...15％</li>
                                         </ul>
                                     </div>
                                 </div>
