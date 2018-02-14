@@ -89,7 +89,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-4">
-                    <h2>{{__('message.about')}}</h2>
+                    <h2>{{ __('message.about')}}</h2>
                     <p class="p01">{!! __('message.whatIsNanJDescription') !!}</p>
                     <div class="row row01">
                         <div class="col-md-6 detail">
@@ -102,7 +102,7 @@
                                     <li>{{__('message.issueNumber')}}</li>
                                 </ul>
                             </div>
-                            <p>{{__('message.whatIsNanJDescription2')}}</p>
+                            <p>｛!!__('message.whatIsNanJDescription2') !!}</p>
                         </div>
                         <div class="col-md-6 allocation">
                             <h3>{{__('message.tokenAssign')}}</h3>
