@@ -108,15 +108,14 @@
                             <h3>{{__('message.tokenAssign')}}</h3>
                             <div class="glaph">
                                 <div class="row">
-                                    <div class="col-xl-5 offset-xl-0 col-lg-6 offset-lg-3 col-sm-4 offset-sm-1 col-6 offset-3" id="aboutGlaphWrapper">
+                                    <div class="col-xl-5 offset-xl-0 col-lg-6 offset-lg-3 col-sm-4 offset-sm-1 col-6 offset-3" id="aboutGraphWrapper">
                                         <canvas id="aboutGlaph"></canvas>
                                     </div>
                                     <div class="col-xl-7 offset-xl-0 col-lg-10 offset-lg-1 col-sm-7 offset-sm-0">
                                         <ul>
-                                            <li class="li01">{{__('message.preSeason')}}...50％</li>
+                                            <li class="li01">{{__('message.preSeason')}}...60％</li>
                                             <li class="li02">{{__('message.operation')}}...<strong>25％</strong></li>
-                                            <li class="li03">{{__('message.lockUp')}}...10％</li>
-                                            <li class="li04">{{__('message.advertisementFee')}}...15％</li>
+                                            <li class="li03">{{__('message.advertisementFee')}}...15％</li>
                                         </ul>
                                     </div>
                                 </div>
