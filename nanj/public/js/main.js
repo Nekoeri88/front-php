@@ -28,8 +28,8 @@ $(document).ready(function () {
     type: "pie",
     data: {
       datasets: [{
-        data: [60, 25, 15],
-        backgroundColor: ["#ff6384", "#ff9f40", "#4bc0c0"],
+        data: [60, 10, 15, 15],
+          backgroundColor: ["#ff6384", "#ff9f40", "#4bc0c0", "#36a2eb"],
         borderColor: "#0a2539"
       }],
     },
