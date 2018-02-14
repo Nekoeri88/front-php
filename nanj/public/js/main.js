@@ -29,7 +29,7 @@ $(document).ready(function () {
     data: {
       datasets: [{
         data: [60, 15, 15, 10],
-          backgroundColor: ["#ff6384", "#4bc0c0", "#36a2eb", "#ff9f40"],
+          backgroundColor: ["#ff6384", "#ff9f40", "#4bc0c0", "#36a2eb"],
         borderColor: "#0a2539"
       }],
     },
