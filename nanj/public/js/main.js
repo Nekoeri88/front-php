@@ -28,7 +28,7 @@ $(document).ready(function () {
     type: "pie",
     data: {
       datasets: [{
-        data: [50, 25, 15],
+        data: [60, 25, 15],
         backgroundColor: ["#ff6384", "#ff9f40", "#4bc0c0"],
         borderColor: "#0a2539"
       }],
