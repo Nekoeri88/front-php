@@ -90,7 +90,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-4">
                     <h2>{{__('message.about')}}</h2>
-                    <p class="p01">{{__('message.whatIsNanJDescription')}}</p>
+                    <p class="p01">{!! __('message.whatIsNanJDescription') !!}</p>
                     <div class="row row01">
                         <div class="col-md-6 detail">
                             <h3>{{__('message.tokenDetail')}}</h3>
@@ -113,10 +113,10 @@
                                     </div>
                                     <div class="col-xl-7 offset-xl-0 col-lg-10 offset-lg-1 col-sm-7 offset-sm-0">
                                         <ul>
-                                            <li class="li01">{{__('message.preSeason')}}...50％</li>
-                                            <li class="li02">{{__('message.operation')}}...<strong>25％</strong></li>
-                                            <li class="li03">{{__('message.lockUp')}}...10％</li>
-                                            <li class="li04">{{__('message.advertisementFee')}}...15％</li>
+                                            <li class="li01">{{__('message.preSeason')}}...60％</li>
+                                            <li class="li02">{{__('message.advertisementFee')}}...15％</li>
+                                            <li class="li03">{{__('message.developmentFee')}}...15％</li>
+                                            <li class="li04">{{__('message.operation')}}...<strong>10％</strong></li>
                                         </ul>
                                     </div>
                                 </div>
