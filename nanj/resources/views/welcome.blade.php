@@ -102,7 +102,7 @@
                                     <li>{{__('message.issueNumber')}}</li>
                                 </ul>
                             </div>
-                            <p>｛!!__('message.whatIsNanJDescription2') !!}</p>
+                            <p>{!! __('message.whatIsNanJDescription2')!!}</p>
                         </div>
                         <div class="col-md-6 allocation">
                             <h3>{{__('message.tokenAssign')}}</h3>
