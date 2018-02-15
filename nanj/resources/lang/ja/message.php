@@ -22,7 +22,7 @@ return [
     'tokenName' => 'トークン名： NANJCOIN',
     'tokenSymbol' => 'トークンシンボル： NANJ',
     'issueNumber' => '発行枚数： 300億',
-    'contractAddress' => 'コントラクトアドレス ：<br> 0xFFE02ee4C69eDf1b340fCaD64fbd6b37a7b9e265',
+    'contractAddress' => 'コントラクトアドレス ：<br><span class="address">0xFFE02ee4C69eDf1b340fCaD64fbd6b37a7b9e265</span>',
     'numberOfDigits' => '桁数 ： 8',
     'comingSoon' => 'しばらくお待ちください。',
     'preSeason' => 'オープン戦',

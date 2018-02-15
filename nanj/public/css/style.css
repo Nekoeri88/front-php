@@ -9778,6 +9778,11 @@ main .fadeInContents > .container.fadeIn {
   word-break: break-all;
 }
 
+#wallet p .address {
+  font-size: 13px;
+  ine-height: 1.6em;
+}
+
 #wallet img {
   max-width: 239px;
 }
