@@ -18,8 +18,8 @@
     <meta name="format-detection" content="telephone=no">
     <meta property="og:title" content="NANJ COIN">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://nanjcoin.com">
-    <meta property="og:image" content="http://nanjcoin.com/og_img.jpg">
+    <meta property="og:url" content="https://nanjcoin.com">
+    <meta property="og:image" content="https://nanjcoin.com/img/ogp_img.jpg">
     <meta property="og:site_name" content="NANJ COIN">
     <meta property="og:description" content="仮想通貨NANJCOINのオフィシャルサイトです">
     <meta name="twitter:card" content="summary">
@@ -30,7 +30,7 @@
     <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/953930012725362688/e_1u74_u_400x400.jpg">
     <meta name="google-site-verification" content="HBXkITJ9F1LFI1Ki6nfhnZ8FjpyNLqhg-WoquAj_kIs" />
     <title>{{__('message.coinName')}}</title>
-    <link rel="canonical" href="http://nanjcoin.com/">
+    <link rel="canonical" href="https://nanjcoin.com/">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Sarpanch">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
