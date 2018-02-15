@@ -18,8 +18,8 @@
     <meta name="format-detection" content="telephone=no">
     <meta property="og:title" content="NANJ COIN">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://nanjcoin.com">
-    <meta property="og:image" content="http://nanjcoin.com/og_img.jpg">
+    <meta property="og:url" content="https://nanjcoin.com">
+    <meta property="og:image" content="https://nanjcoin.com/img/ogp_img.jpg">
     <meta property="og:site_name" content="NANJ COIN">
     <meta property="og:description" content="仮想通貨NANJCOINのオフィシャルサイトです">
     <meta name="twitter:card" content="summary">
@@ -30,7 +30,7 @@
     <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/953930012725362688/e_1u74_u_400x400.jpg">
     <meta name="google-site-verification" content="HBXkITJ9F1LFI1Ki6nfhnZ8FjpyNLqhg-WoquAj_kIs" />
     <title>{{__('message.coinName')}}</title>
-    <link rel="canonical" href="http://nanjcoin.com/">
+    <link rel="canonical" href="https://nanjcoin.com/">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Sarpanch">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -48,12 +48,12 @@
                     <h1><img src="img/header_img_01.png" alt="NANJ"><span>{{__('message.coinName')}}</span></h1>
                     <ul class="nav d-none d-md-block">
                         <li class="btn_top">{{__('message.top')}}</li>
-                        <li class="btn_nav">{{__('message.about')}}</li>
-                        <li class="btn_nav">{{__('message.roadMap')}}</li>
-                        <li class="btn_nav">{{__('message.whitePaper')}}</li>
-                        <li class="btn_nav">{{__('message.wallet')}}</li>
-                        <li class="btn_nav">{{__('message.exchanges')}}</li>
-                        <li class="btn_nav">{{__('message.community')}}</li>
+                        <li class="btn_nav"><a href="#about">{{__('message.about')}}</a></li>
+                        <li class="btn_nav"><a href="#roadmap">{{__('message.roadMap')}}</a></li>
+                        <li class="btn_nav"><a href="#group01">{{__('message.whitePaper')}}</a></li>
+                        <li class="btn_nav"><a href="#wallet">{{__('message.wallet')}}</a></li>
+                        <li class="btn_nav"><a href="#exchanges">{{__('message.exchanges')}}</a></li>
+                        <li class="btn_nav"><a href="#community">{{__('message.community')}}</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 col-sm-5 col-3 language">
@@ -66,8 +66,8 @@
                     </p>
                     <ul>
                         {{--<li><a href="/ja/"><span class="text">日本語</span><span class="image"><img src="img/language_img_01.png" alt="日本語"></span></a></li>--}}
-                        {{--<li><a href="/ja/"><span class="text">日本語</span><span class="image"><img src="img/language_img_01.png" alt="日本語"></span></a></li>--}}
-                        {{--<li><a href="/ja/"><span class="text">日本語</span><span class="image"><img src="img/language_img_01.png" alt="日本語"></span></a></li>--}}
+                        {{--<li><a href="/ja/"><span class="text">英語</span><span class="image"><img src="img/language_img_01.png" alt="英語"></span></a></li>--}}
+                        {{--<li><a href="/ja/"><span class="text">中国語</span><span class="image"><img src="img/language_img_01.png" alt="中国語"></span></a></li>--}}
                     </ul>
                 </div>
             </div>
@@ -89,8 +89,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-4">
-                    <h2>{{__('message.about')}}</h2>
-                    <p class="p01">{{__('message.whatIsNanJDescription')}}</p>
+                    <h2>{{ __('message.about')}}</h2>
+                    <p class="p01">{!! __('message.whatIsNanJDescription') !!}</p>
                     <div class="row row01">
                         <div class="col-md-6 detail">
                             <h3>{{__('message.tokenDetail')}}</h3>
@@ -102,7 +102,7 @@
                                     <li>{{__('message.issueNumber')}}</li>
                                 </ul>
                             </div>
-                            <p>{{__('message.whatIsNanJDescription2')}}</p>
+                            <p>{!! __('message.whatIsNanJDescription2')!!}</p>
                         </div>
                         <div class="col-md-6 allocation">
                             <h3>{{__('message.tokenAssign')}}</h3>
@@ -113,10 +113,10 @@
                                     </div>
                                     <div class="col-xl-7 offset-xl-0 col-lg-10 offset-lg-1 col-sm-7 offset-sm-0">
                                         <ul>
-                                            <li class="li01">{{__('message.preSeason')}}...50％</li>
-                                            <li class="li02">{{__('message.operation')}}...<strong>25％</strong></li>
-                                            <li class="li03">{{__('message.lockUp')}}...10％</li>
-                                            <li class="li04">{{__('message.tokenName')}}...15％</li>
+                                            <li class="li01">{{__('message.preSeason')}}...60％</li>
+                                            <li class="li02">{{__('message.advertisementFee')}}...15％</li>
+                                            <li class="li03">{{__('message.developmentFee')}}...15％</li>
+                                            <li class="li04">{{__('message.operation')}}...<strong>10％</strong></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -151,7 +151,7 @@
                 <div class="col-lg-4" id="wallet">
                     <h2>{{__('message.wallet')}}</h2>
                     <p><a href="https://www.myetherwallet.com" target="_blank"><img src="img/wallet_btn_01.png" alt="MyEtherWallet"></a></p>
-                    <p>{{__('message.contractAddress')}}<br>{{__('message.tokenSymbol')}}　{{__('message.numberOfDigits')}}</p>
+                    <p>{!! __('message.contractAddress') !!}<br>{{__('message.tokenSymbol')}}　{{__('message.numberOfDigits')}}</p>
                 </div>
                 <div class="col-lg-4" id="exchanges">
                     <h2>{{__('message.exchanges')}}</h2>
