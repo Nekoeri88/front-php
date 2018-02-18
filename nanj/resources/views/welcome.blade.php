@@ -16,17 +16,17 @@
     <meta name="keywords" content="NANJ,NANJCOIN,なんJ,なんJコイン,仮想通貨">
     <meta name="description" content="{{ __('message.whatIsNanJDescription') }}">
     <meta name="format-detection" content="telephone=no">
-    <meta property="og:title" content="NANJ COIN">
+    <meta property="og:title" content="{{ __('message.coinName') }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nanjcoin.com">
     <meta property="og:image" content="https://nanjcoin.com/img/ogp_img.jpg">
-    <meta property="og:site_name" content="NANJ COIN">
+    <meta property="og:site_name" content="{{ __('message.coinName') }}">
     <meta property="og:description" content="仮想通貨NANJCOINのオフィシャルサイトです">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@nanjcoin">
     <meta name="twitter:title" content="仮想通貨NANJCOIN">
     <meta name="twitter:url" content="https://twitter.com/nanjcoin?lang=ja">
-    <meta name="twitter:description" content="仮想通貨NANJCOINに関するニュースを配信しています。">
+    <meta name="twitter:description" content="仮想通貨NANJCOIN公式サイト">
     <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/953930012725362688/e_1u74_u_400x400.jpg">
     <meta name="google-site-verification" content="HBXkITJ9F1LFI1Ki6nfhnZ8FjpyNLqhg-WoquAj_kIs" />
     <title>{{__('message.coinName')}}</title>
