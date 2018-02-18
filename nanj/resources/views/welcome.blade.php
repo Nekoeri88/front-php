@@ -32,7 +32,7 @@
     <title>{{__('message.coinName')}}</title>
     <link rel="canonical" href="https://nanjcoin.com/">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Sarpanch">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
 <header>
@@ -45,7 +45,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-sm-7 col-9">
-                    <h1><img src="img/header_img_01.png" alt="NANJ"><span>{{__('message.coinName')}}</span></h1>
+                    <h1><img src="/img/header_img_01.png" alt="NANJ"><span>{{__('message.coinName')}}</span></h1>
                     <ul class="nav d-none d-md-block">
                         <li class="btn_top">{{__('message.top')}}</li>
                         <li class="btn_nav"><a href="#about">{{__('message.about')}}</a></li>
@@ -60,14 +60,14 @@
                     <p>
                         <a href="/ja/">
                             <span class="text">日本語</span><span class="image">
-                                <img src="img/language_img_01.png" alt="日本語">
+                                <img src="/img/language_img_01.png" alt="日本語">
                             </span>
                         </a>
                     </p>
                     <ul>
-                        <li><a href="/ja/"><span class="text">日本語</span><span class="image"><img src="img/language_img_01.png" alt="日本語"></span></a></li>
-                        <li><a href="/en/"><span class="text">English</span><span class="image"><img src="img/language_img_02.png" alt="English"></span></a></li>
-                        {{--<li><a href="/ja/"><span class="text">中国語</span><span class="image"><img src="img/language_img_01.png" alt="中国語"></span></a></li>--}}
+                        <li><a href="/ja/"><span class="text">日本語</span><span class="image"><img src="/img/language_img_01.png" alt="日本語"></span></a></li>
+                        <li><a href="/en/"><span class="text">English</span><span class="image"><img src="/img/language_img_02.png" alt="English"></span></a></li>
+                        {{--<li><a href="/ja/"><span class="text">中国語</span><span class="image"><img src="/img/language_img_01.png" alt="中国語"></span></a></li>--}}
                     </ul>
                 </div>
             </div>
@@ -78,7 +78,7 @@
                         <p class="p01">{!!__('message.nanjMean') !!}</p>
                         <p class="p02">{!!__('message.nanjMean2') !!}</p>
                     </div>
-                    <div class="image"><img src="img/header_img_02.png" alt="NANJ COIN"></div>
+                    <div class="image"><img src="/img/header_img_02.png" alt="NANJ COIN"></div>
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@
                         <div class="col-md-6 detail">
                             <h3>{{__('message.tokenDetail')}}</h3>
                             <div class="clearfix">
-                                <p class="image"><img src="img/about_img_01.png" alt="NANJ"></p>
+                                <p class="image"><img src="/img/about_img_01.png" alt="NANJ"></p>
                                 <ul>
                                     <li>{{__('message.tokenName')}}</li>
                                     <li>{{__('message.tokenSymbol')}}</li>
@@ -134,7 +134,7 @@
                 <div class="col-12">
                     <h2>{{__('message.roadMap')}}</h2>
                     <p class="p01 text-center">{!! __('message.roadMapDescription') !!}</p>
-                    <p><img class="mw-100 d-none d-lg-block" src="img/roadmap_img_01.png" alt="ROADMAP"><img class="mw-100 d-md-block d-lg-none" src="img/roadmap_img_01_sp.png" alt="ROADMAP"></p>
+                    <p><img class="mw-100 d-none d-lg-block" src="/img/roadmap_img_01.png" alt="ROADMAP"><img class="mw-100 d-md-block d-lg-none" src="/img/roadmap_img_01_sp.png" alt="ROADMAP"></p>
                 </div>
             </div>
         </div>
@@ -145,12 +145,12 @@
                 <div class="col-lg-4" id="whitepaper">
                     <h2>{{__('message.whitePaper')}}</h2>
                     <p>
-                        <!--: a(href='' target='_blank')--><img src="img/whitepaper_btn_01_da.png" alt="DOWNLOAD">
+                        <!--: a(href='' target='_blank')--><img src="/img/whitepaper_btn_01_da.png" alt="DOWNLOAD">
                     </p>
                 </div>
                 <div class="col-lg-4" id="wallet">
                     <h2>{{__('message.wallet')}}</h2>
-                    <p><a href="https://www.myetherwallet.com" target="_blank"><img src="img/wallet_btn_01.png" alt="MyEtherWallet"></a></p>
+                    <p><a href="https://www.myetherwallet.com" target="_blank"><img src="/img/wallet_btn_01.png" alt="MyEtherWallet"></a></p>
                     <p>{!! __('message.contractAddress') !!}<br>{{__('message.tokenSymbol')}}　{{__('message.numberOfDigits')}}</p>
                 </div>
                 <div class="col-lg-4" id="exchanges">
@@ -171,13 +171,13 @@
                 <div class="col-md-6 offset-md-3">
                     <div class="row">
                         <div class="col-sm-4 twitter"><a href="https://twitter.com/nanjcoin" target="_blank">
-                                <p><img src="img/comunity_btn_01.png" alt="twitter"></p>
+                                <p><img src="/img/comunity_btn_01.png" alt="twitter"></p>
                                 <p>twitter</p></a></div>
                         <div class="col-sm-4 discord"><a href="https://discord.gg/xa94m8F" target="_blank">
-                                <p><img src="img/comunity_btn_02.png" alt="discord"></p>
+                                <p><img src="/img/comunity_btn_02.png" alt="discord"></p>
                                 <p>discord</p></a></div>
                         <div class="col-sm-4 github"><a href="https://github.com/NANJ-COIN" target="_blank">
-                                <p><img src="img/comunity_btn_03.png" alt="GitHub"></p>
+                                <p><img src="/img/comunity_btn_03.png" alt="GitHub"></p>
                                 <p>GitHub</p></a></div>
                     </div>
                 </div>
@@ -220,10 +220,10 @@
         </div>
     </div>
 </footer>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/Chart.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/main.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/Chart.min.js"></script>
+<script src="/js/jquery.waypoints.min.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>
