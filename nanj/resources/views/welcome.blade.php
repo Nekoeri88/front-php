@@ -58,10 +58,8 @@
                 </div>
                 <div class="col-md-2 col-sm-5 col-3 language">
                     <p>
-                        <a href="/ja/">
-                            <span class="text">日本語</span><span class="image">
-                                <img src="/img/language_img_01.png" alt="日本語">
-                            </span>
+                        <a href="">
+                            <span class="btn_nav text">Language</span>
                         </a>
                     </p>
                     <ul>
