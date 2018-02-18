@@ -14,7 +14,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="NANJ,NANJCOIN,なんJ,なんJコイン,仮想通貨">
-    <meta name="description" content="NANJは5ch上の「なんでも実況J板」、通称「なんJ」発祥のEthereumトークンです。なんJの有志により開発、運営されています。">
+    <meta name="description" content="{{ __('message.whatIsNanJDescription') }}">
     <meta name="format-detection" content="telephone=no">
     <meta property="og:title" content="NANJ COIN">
     <meta property="og:type" content="website">
@@ -65,8 +65,8 @@
                         </a>
                     </p>
                     <ul>
-                        {{--<li><a href="/ja/"><span class="text">日本語</span><span class="image"><img src="img/language_img_01.png" alt="日本語"></span></a></li>--}}
-                        {{--<li><a href="/ja/"><span class="text">英語</span><span class="image"><img src="img/language_img_01.png" alt="英語"></span></a></li>--}}
+                        <li><a href="/ja/"><span class="text">日本語</span><span class="image"><img src="img/language_img_01.png" alt="日本語"></span></a></li>
+                        <li><a href="/en/"><span class="text">English</span><span class="image"><img src="img/language_img_02.png" alt="English"></span></a></li>
                         {{--<li><a href="/ja/"><span class="text">中国語</span><span class="image"><img src="img/language_img_01.png" alt="中国語"></span></a></li>--}}
                     </ul>
                 </div>
@@ -133,7 +133,7 @@
             <div class="row">
                 <div class="col-12">
                     <h2>{{__('message.roadMap')}}</h2>
-                    <p class="p01">{{__('message.roadMapDescription')}}</p>
+                    <p class="p01 text-center">{!! __('message.roadMapDescription') !!}</p>
                     <p><img class="mw-100 d-none d-lg-block" src="img/roadmap_img_01.png" alt="ROADMAP"><img class="mw-100 d-md-block d-lg-none" src="img/roadmap_img_01_sp.png" alt="ROADMAP"></p>
                 </div>
             </div>
