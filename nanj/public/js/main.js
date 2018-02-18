@@ -88,8 +88,8 @@ $(document).ready(function () {
   var videoDom = headerVideoDom.find("video");
   var videoAspect = 1.834;
   var videos = new Array(
-    [0, "img/header_mov_01_sp.mp4"],
-    [768, "img/header_mov_01.mp4"]
+    [0, "/img/header_mov_01_sp.mp4"],
+    [768, "/img/header_mov_01.mp4"]
   );
   
   //variable
