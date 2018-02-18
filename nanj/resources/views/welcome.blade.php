@@ -132,7 +132,10 @@
                 <div class="col-12">
                     <h2>{{__('message.roadMap')}}</h2>
                     <p class="p01 text-center">{!! __('message.roadMapDescription') !!}</p>
-                    <p><img class="mw-100 d-none d-lg-block" src="/img/roadmap_img_01.png" alt="ROADMAP"><img class="mw-100 d-md-block d-lg-none" src="/img/roadmap_img_01_sp.png" alt="ROADMAP"></p>
+                    <p>
+                        <img class="mw-100 d-none d-lg-block" src="{{ __('message.roadmapPlace') }}" alt="ROADMAP">
+                        <img class="mw-100 d-md-block d-lg-none" src="/img/roadmap_img_01_sp.png" alt="ROADMAP">
+                    </p>
                 </div>
             </div>
         </div>
