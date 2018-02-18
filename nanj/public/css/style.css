@@ -9153,37 +9153,49 @@ a:hover {
 
 #header .language {
   text-align: right;
-  padding-top: 23px;
+  padding-top: 30px;
+}
+
+@media (max-width: 575.98px) {
+  #header .language {
+    padding-top: 32px;
+  }
 }
 
 #header .language a {
   display: block;
-}
-
-#header .language a .text {
-  padding-right: 8px;
   font-size: 12px;
   line-height: 1.4em;
+  text-decoration: none;
+}
+
+#header .language a img {
+  max-width: 35px;
 }
 
 #header .language p {
   margin: 0 0 10px;
 }
 
-#header .language p a .text {
-  padding-right: 8px;
-  font-size: 12px;
-  line-height: 1.4em;
+#header .language p a {
+  font-family: 'Sarpanch', sans-serif;
+  -webkit-transform: scaleY(0.75);
+          transform: scaleY(0.75);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  letter-spacing: 0.12em;
+  position: relative;
+  display: inline-block;
+  padding-right: 10px;
 }
 
-@media (max-width: 575.98px) {
-  #header .language p a .text {
-    display: none;
-  }
-}
-
-#header .language img {
-  max-width: 35px;
+#header .language p a:after {
+  position: absolute;
+  right: 0;
+  top: 6px;
+  content: "";
+  border: 5px transparent solid;
+  border-top: 5px #ffffff solid;
 }
 
 #header .language ul {
@@ -9211,6 +9223,14 @@ a:hover {
 
 #header .language ul li a {
   padding: 10px 15px;
+}
+
+#header .language ul li a .text {
+  position: relative;
+  top: 2px;
+  padding-right: 8px;
+  font-size: 13px;
+  line-height: 1.4em;
 }
 
 #header .fv {
