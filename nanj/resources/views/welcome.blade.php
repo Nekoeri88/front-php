@@ -19,7 +19,7 @@
     <meta property="og:title" content="{{ __('message.coinName') }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nanjcoin.com">
-    <meta property="og:image" content="https://nanjcoin.com/img/ogp_img.jpg">
+    <meta property="og:image" content="/img/ogp_img.jpg">
     <meta property="og:site_name" content="{{ __('message.coinName') }}">
     <meta property="og:description" content="仮想通貨NANJCOINのオフィシャルサイトです">
     <meta name="twitter:card" content="summary">
@@ -64,7 +64,7 @@
                     </p>
                     <ul>
                         <li><a href="/ja/"><span class="text">日本語</span><span class="image"><img src="/img/language_img_01.png" alt="日本語"></span></a></li>
-                        <li><a href="/en/"><span class="text">English</span><span class="image"><img src="/img/language_img_02.png" alt="English"></span></a></li>
+                        <li><a href="/en/"><span class="text">en</span><span class="image"><img src="/img/language_img_02.png" alt="English"></span></a></li>
                         {{--<li><a href="/ja/"><span class="text">中国語</span><span class="image"><img src="/img/language_img_01.png" alt="中国語"></span></a></li>--}}
                     </ul>
                 </div>
