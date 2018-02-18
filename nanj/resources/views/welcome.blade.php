@@ -134,7 +134,7 @@
                     <p class="p01 text-center">{!! __('message.roadMapDescription') !!}</p>
                     <p>
                         <img class="mw-100 d-none d-lg-block" src="{{ __('message.roadmapPlace') }}" alt="ROADMAP">
-                        <img class="mw-100 d-md-block d-lg-none" src="/img/roadmap_img_01_sp.png" alt="ROADMAP">
+                        <img class="mw-100 d-md-block d-lg-none" src="{{ __('message.roadmapPlaceSp') }}" alt="ROADMAP">
                     </p>
                 </div>
             </div>
@@ -146,7 +146,7 @@
                 <div class="col-lg-4" id="whitepaper">
                     <h2>{{__('message.whitePaper')}}</h2>
                     <p>
-                        <!--: a(href='' target='_blank')--><img src="/img/whitepaper_btn_01_da.png" alt="DOWNLOAD">
+                        <a href="/white_paper.pdf" target="_blank"><img src="/img/whitepaper_btn_01.png" alt="DOWNLOAD"></a>
                     </p>
                 </div>
                 <div class="col-lg-4" id="wallet">
