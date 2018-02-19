@@ -9287,6 +9287,10 @@ a:hover {
   }
 }
 
+#header .fv .text h2 span {
+  display: inline-block;
+}
+
 #header .fv .text p {
   font-family: 'Sarpanch', sans-serif;
   -webkit-transform: scaleY(0.75);

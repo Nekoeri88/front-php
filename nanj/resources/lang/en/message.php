@@ -1,7 +1,7 @@
 <?php
 
     return [
-        'coinName' => 'NANJ COIN',
+        'coinName' => 'NANJCOIN',
         'description' => '',
         'top' => 'TOP',
         'about' => 'ABOUT',

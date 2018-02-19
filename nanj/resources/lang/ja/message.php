@@ -3,7 +3,7 @@
  * 多言語化対応用に文字列は全てここに記述し、それぞれのviewファイルやcssには文字列を残さない事。
  */
 return [
-    'coinName' => 'NANJ COIN',
+    'coinName' => 'NANJCOIN',
     'description' => 'なんJ民によるなんJ民のための仮想通貨NANJCOIN',
     'top' => 'TOP',
     'about' => 'ABOUT',

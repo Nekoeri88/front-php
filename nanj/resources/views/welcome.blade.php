@@ -71,11 +71,11 @@
             <div class="row">
                 <div class="col-lg-12 fv">
                     <div class="text">
-                        <h2>{{__('message.coinName')}}</h2>
+                        <h2><span>NANJ</span><span>COIN</span></h2>
                         <p class="p01">{!!__('message.nanjMean') !!}</p>
                         <p class="p02">{!!__('message.nanjMean2') !!}</p>
                     </div>
-                    <div class="image"><img src="/img/header_img_02.png" alt="NANJ COIN"></div>
+                    <div class="image"><img src="/img/header_img_02.png" alt="NANJCOIN"></div>
                 </div>
             </div>
         </div>
@@ -214,7 +214,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p>© ALL RIGHTS RESERVED. NANJ COIN 2018</p>
+                    <p>© ALL RIGHTS RESERVED. NANJCOIN 2018</p>
                 </div>
             </div>
         </div>
