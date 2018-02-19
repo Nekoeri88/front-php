@@ -56,15 +56,24 @@
                         <li class="btn_nav"><a href="#community">{{__('message.community')}}</a></li>
                     </ul>
                 </div>
+                @php
+                    $languages = [
+                        "ja" => ["url" => "/ja/", "name" => "日本語", "flagSrc" => "/img/language_img_01.png"],
+                        "en" => ["url" => "/en/", "name" => "English", "flagSrc" => "/img/language_img_02.png"],
+                        //"cn" =>["url" => "/cn/", "name" => "中国語", "flagSrc" => "/img/language_img_03.png"],
+                    ];
+                    if(isset($languages[app()->getLocale()])) {
+                        $selectedLanguage = $languages[app()->getLocale()];
+                    } else {
+                        $selectedLanguage = $languages["ja"];
+                    }
+                @endphp
                 <div class="col-md-2 col-sm-5 col-3 language">
-                    <p>
-                        <a class="d-none d-sm-block" href=""><span>Language</span></a>
-                        <a class="d-block d-sm-none" href=""><span>LANG</span></a>
-                    </p>
+                    <p><a href="{{$selectedLanguage["url"]}}"><span class="text">{{$selectedLanguage["name"]}}</span><span class="image"><img src="{{$selectedLanguage["flagSrc"]}}" alt="{{$selectedLanguage["name"]}}"></span></a></p>
                     <ul>
-                        <li><a href="/ja/"><span class="text">日本語</span><span class="image"><img src="/img/language_img_01.png" alt="日本語"></span></a></li>
-                        <li><a href="/en/"><span class="text">English</span><span class="image"><img src="/img/language_img_02.png" alt="English"></span></a></li>
-                        {{--<li><a href="/ja/"><span class="text">中国語</span><span class="image"><img src="/img/language_img_01.png" alt="中国語"></span></a></li>--}}
+                        @foreach ($languages as $language)
+                            <li><a href="{{$language["url"]}}"><span class="text">{{$language["name"]}}</span><span class="image"><img src="{{$language["flagSrc"]}}" alt="{{$language["name"]}}"></span></a></li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
