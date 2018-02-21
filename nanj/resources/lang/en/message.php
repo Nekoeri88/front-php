@@ -12,7 +12,8 @@
         'community' => 'COMMUNITY',
         'whatIsNanJ' => 'NANJCOINとは？',
         'whatIsNanJDescription' =>
-            'NANJCOIN is a volunteer community developed and operated token based on the Ethereum token that originated in 2ch.sc, a Japanese internet community.',
+            'NANJCOIN is a volunteer community developed and operated token based on the Ethereum token that originated in 2ch.sc, a Japanese internet community.<br>
+            NANJCOIN is a sports lovers token, for baseball in particular, that is rarely seen internationally. In February 2018, we had a free distribution event (airdrop), after which we listed on overseas exchanges and planned for the opening game (pre-sale). In the future, we aim to expand into various sports fields and to donate to players and teams. ※ NANJCOIN is the born from the fan community, and has no relationship at all with 2ch.sc management, 5ch operation, etc.',
         'whatIsNanJDescription2' =>
             'NANJCOIN is based on ERC20/ERC223, which is the first token made by the Japanese. Expansion of partners is planned in the future, for the purpose of including more sports for other sports lovers. The idea is to provide you with better than usual rates and benefits for your shopping. Furthermore, we plan to build a system for ease of donation to players and organizations that are struggling financially, such as certain sports with less structured support (domestic and regional sports clubs). (From Stage 3) Additionally, we hope that in the future, these donations can be used vote on how to manage the actual sports team within the community.',
         'tokenDetail' => 'TokenDetail',
