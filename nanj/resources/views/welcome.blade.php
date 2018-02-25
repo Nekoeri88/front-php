@@ -184,7 +184,7 @@
                         <div class="col-sm-4 discord"><a href="https://discord.gg/xa94m8F" target="_blank">
                                 <p><img src="/img/comunity_btn_02.png" alt="discord"></p>
                                 <p>discord</p></a></div>
-                        <div class="col-sm-4 github"><a href="https://github.com/NANJ-COIN" target="_blank">
+                        <div class="col-sm-4 github"><a href="https://github.com/NANJ-COIN/token" target="_blank">
                                 <p><img src="/img/comunity_btn_03.png" alt="GitHub"></p>
                                 <p>GitHub</p></a></div>
                     </div>
