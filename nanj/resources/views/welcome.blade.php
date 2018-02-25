@@ -47,7 +47,6 @@
                 <div class="col-md-10 col-sm-7 col-9">
                     <h1><img src="/img/header_img_01.png" alt="NANJ"><span>{{__('message.coinName')}}</span></h1>
                     <ul class="nav d-none d-md-block">
-                        {{-- <li class="btn_top">{{__('message.top')}}</li> --}}
                         <li class="btn_nav"><a href="#about">{{__('message.about')}}</a></li>
                         <li class="btn_nav"><a href="#roadmap">{{__('message.roadMap')}}</a></li>
                         <li class="btn_nav"><a href="#group01">{{__('message.whitePaper')}}</a></li>
@@ -56,23 +55,23 @@
                         <li class="btn_nav"><a href="#community">{{__('message.community')}}</a></li>
                     </ul>
                 </div>
-                @php
-                    $languages = [
-                        "ja" => ["url" => "/ja/", "name" => "日本語", "flagSrc" => "/img/language_img_01.png"],
-                        "en" => ["url" => "/en/", "name" => "English", "flagSrc" => "/img/language_img_02.png"],
-                        //"cn" =>["url" => "/cn/", "name" => "中国語", "flagSrc" => "/img/language_img_03.png"],
-                    ];
-                    if(isset($languages[app()->getLocale()])) {
-                        $selectedLanguage = $languages[app()->getLocale()];
-                    } else {
-                        $selectedLanguage = $languages["ja"];
-                    }
-                @endphp
                 <div class="col-md-2 col-sm-5 col-3 language">
-                    <p><a href="{{$selectedLanguage["url"]}}"><span class="text">{{$selectedLanguage["name"]}}</span><span class="image"><img src="{{$selectedLanguage["flagSrc"]}}" alt="{{$selectedLanguage["name"]}}"></span></a></p>
+                    <p>
+                        <a href="{{ App::getLocale() }}">
+                            <span class="text">{{ Config::get('languages')[App::getLocale()]['name'] }}</span>
+                            <span class="image"><img src="{{Config::get('languages')[App::getLocale()]['flagSrc']}}" alt="{{ Config::get('languages')[App::getLocale()]['name'] }}"></span>
+                        </a>
+                    </p>
                     <ul>
-                        @foreach ($languages as $language)
-                            <li><a href="{{$language["url"]}}"><span class="text">{{$language["name"]}}</span><span class="image"><img src="{{$language["flagSrc"]}}" alt="{{$language["name"]}}"></span></a></li>
+                        @foreach (Config::get('languages') as $lang => $language)
+                            @if ($lang != App::getLocale())
+                                <li>
+                                    <a href="{{ route('lang.switch', $lang) }}">
+                                        <span class="text">{{$language['name']}}</span>
+                                        <span class="image"><img src="{{$language['flagSrc']}}" alt="{{$language['name']}}"></span>
+                                    </a>
+                                </li>
+                            @endif
                         @endforeach
                     </ul>
                 </div>

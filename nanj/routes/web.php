@@ -20,3 +20,8 @@ Route::get('/{locale}', function ($locale) {
     return view('welcome');
 });
 
+    /**
+     * 言語切替
+     */
+    Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'LanguageController@switchLang']);
+
