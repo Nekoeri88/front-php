@@ -32,7 +32,7 @@ class HomeController extends Controller
             } else {
                 $wallets = new Wallet();
                 $wallets->email = $request->email;
-                $wallets->address = $request->wallet;
+                $wallets->address = $request->address;
                 $wallets->save();
 
                 return redirect('/thanks');
