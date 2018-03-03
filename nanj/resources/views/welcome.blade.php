@@ -245,7 +245,7 @@
           <div class="col-12">
             <div class="bg">
               <h2>AIR DROP</h2>
-              <p class="p01">下記フォームにメールアドレス及び、ETHウォレットアドレスを入力してください。もれなくNANJCOINプレゼント！<br>（NANJCOINプレゼント数は参加数に応じて変動します。くわしくは<a href="">こちら</a>）</p>
+              <p class="p01">下記フォームにメールアドレス及び、ETHウォレットアドレスを入力してください。もれなくNANJCOINプレゼント！<br>（NANJCOINプレゼント数は参加数に応じて変動します。くわしくは<a href="https://twitter.com/nanjcoin/status/969914949668560896">こちら</a>）</p>
               <form action="/" method="POST">
                   {{ csrf_field() }}
                 <div class="inputArea">
