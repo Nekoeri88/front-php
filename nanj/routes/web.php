@@ -11,14 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+    /**
+     * TOP表示
+     */
+    Route::match(['get', 'post'], '/', 'HomeController@index');
 
-Route::get('/{locale}', function ($locale) {
-    App::setLocale($locale);
-    return view('welcome');
-});
+    /**
+     * 完了画面表示
+     */
+    Route::post('/thanks', 'HomeController@thanks');
 
     /**
      * 言語切替
