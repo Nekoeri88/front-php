@@ -27,7 +27,7 @@
     <meta name="twitter:title" content="仮想通貨NANJCOIN">
     <meta name="twitter:url" content="https://twitter.com/nanjcoin?lang=ja">
     <meta name="twitter:description" content="仮想通貨NANJCOIN公式サイト">
-    <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/953930012725362688/e_1u74_u_400x400.jpg">
+    <meta name="twitter:image" content="https://nanjcoin.com/blog/wp-content/uploads/2018/02/new_logo.png">
     <meta name="google-site-verification" content="HBXkITJ9F1LFI1Ki6nfhnZ8FjpyNLqhg-WoquAj_kIs" />
     <title>{{__('message.coinName')}}</title>
     <link rel="canonical" href="https://nanjcoin.com/">
