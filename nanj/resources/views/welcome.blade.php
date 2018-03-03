@@ -254,7 +254,7 @@
                       <input class="field emailAddress" type="email" name="email" placeholder="Enter your Mail address">
                     </p>
                     <p class="right col-md-6">
-                      <input class="field walletAddress" type="text" name="wallet" placeholder="Enter your ETH wallet address">
+                      <input class="field walletAddress" type="text" name="address" placeholder="Enter your ETH wallet address">
                     </p>
                   </div>
                   <div class="row">
