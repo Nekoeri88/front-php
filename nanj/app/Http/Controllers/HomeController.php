@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 Use Carbon\Carbon;
 use App\Wallet;
 use Validator;
+use App\Poem;
 
 class HomeController extends Controller
 {
@@ -56,4 +57,15 @@ class HomeController extends Controller
         $targetTime = new Carbon($targetDate);
         return $dt->gte($targetTime) ? 0 : 1;
     }
+
+    /**
+     * 川柳の表示
+     */
+    public function poem() {
+        $members = Poem::all();   // Eloquent"Member"で全データ取得
+        return view('poem', ["members" => $members]);
+
+    }
+
+
 }

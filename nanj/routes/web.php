@@ -26,3 +26,7 @@
      */
     Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'LanguageController@switchLang']);
 
+    /**
+     * 川柳表示
+     */
+    Route::get('/poem', 'HomeController@poem');
