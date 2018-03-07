@@ -14,28 +14,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="NANJ,NANJCOIN,なんJ,なんJコイン,仮想通貨">
-    <meta name="description" content="NANJは5ch上の「なんでも実況J板」、通称「なんJ」発祥のEthereumトークンです。なんJの有志により開発、運営されています。">
+    <meta name="description" content="{{ __('message.whatIsNanJDescription') }}">
     <meta name="format-detection" content="telephone=no">
-    <meta property="og:title" content="NANJ COIN">
+    <meta property="og:title" content="{{ __('message.coinName') }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nanjcoin.com">
     <meta property="og:image" content="https://nanjcoin.com/img/ogp_img.jpg">
-    <meta property="og:site_name" content="NANJ COIN">
+    <meta property="og:site_name" content="{{ __('message.coinName') }}">
     <meta property="og:description" content="仮想通貨NANJCOINのオフィシャルサイトです">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@nanjcoin">
     <meta name="twitter:title" content="仮想通貨NANJCOIN">
     <meta name="twitter:url" content="https://twitter.com/nanjcoin?lang=ja">
-    <meta name="twitter:description" content="仮想通貨NANJCOINに関するニュースを配信しています。">
-    <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/953930012725362688/e_1u74_u_400x400.jpg">
+    <meta name="twitter:description" content="仮想通貨NANJCOIN公式サイト">
+    <meta name="twitter:image" content="https://nanjcoin.com/blog/wp-content/uploads/2018/02/new_logo.png">
     <meta name="google-site-verification" content="HBXkITJ9F1LFI1Ki6nfhnZ8FjpyNLqhg-WoquAj_kIs" />
     <title>{{__('message.coinName')}}</title>
     <link rel="canonical" href="https://nanjcoin.com/">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Sarpanch">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
 <header>
+    @isset($isShowCountDown)
+    @if($isShowCountDown)
+    <div id="listingApproval">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2><img class="d-none d-sm-inline" src="img/listingapproval_img_01.png" alt="2018年3月16日21時［コインエクスチェンジ］に上場決定！"><img class="d-inline d-sm-none" src="img/listingapproval_img_01_sp.png" alt="2018年3月16日21時［コインエクスチェンジ］に上場決定！"></h2>
+            <div id="countdown">
+              <p class="d-block d-sm-none">上場まで</p>
+              <div class="wrapper">
+                <dl class="clearfix">
+                  <dt class="d-none d-sm-block"><span>上場まで</span></dt>
+                  <dd><span class="number"><strong class="days">00</strong></span><span>Days</span></dd>
+                  <dd><span class="number"><strong class="hours">00</strong></span><span>Hours</span></dd>
+                  <dd><span class="number"><strong class="minutes">00</strong></span><span>Minutes</span></dd>
+                  <dd><span class="number"><strong class="seconds">00</strong></span><span>Seconds</span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        @isset($isShowAirDrop)
+        @if($isShowAirDrop)
+        <div class="row" id="airdropInformation">
+          <div class="col-12"><a href="#airdrop"><img class="d-none d-sm-inline" src="img/listingapproval_btn_01.gif" alt="CoinExchange上場を記念してAIR DROP開催中！（AIR DROP締切 2018年3月10日23時59分迄）"><img class="d-inline d-sm-none" src="img/listingapproval_btn_01_sp.gif" alt="CoinExchange上場を記念してAIR DROP開催中！（AIR DROP締切 2018年3月10日23時59分迄）"></a></div>
+        </div>
+        @endif
+        @endisset
+      </div>
+    </div>
+    @endif
+    @endisset
     <div id="header">
         <div id="headerVideo">
             <div class="video">
@@ -45,9 +77,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-sm-7 col-9">
-                    <h1><img src="img/header_img_01.png" alt="NANJ"><span>{{__('message.coinName')}}</span></h1>
+                    <h1><img src="/img/header_img_01.png" alt="NANJ"><span>{{__('message.coinName')}}</span></h1>
                     <ul class="nav d-none d-md-block">
-                        <li class="btn_top">{{__('message.top')}}</li>
                         <li class="btn_nav"><a href="#about">{{__('message.about')}}</a></li>
                         <li class="btn_nav"><a href="#roadmap">{{__('message.roadMap')}}</a></li>
                         <li class="btn_nav"><a href="#group01">{{__('message.whitePaper')}}</a></li>
@@ -58,27 +89,33 @@
                 </div>
                 <div class="col-md-2 col-sm-5 col-3 language">
                     <p>
-                        <a href="/ja/">
-                            <span class="text">日本語</span><span class="image">
-                                <img src="img/language_img_01.png" alt="日本語">
-                            </span>
+                        <a href="{{ App::getLocale() }}">
+                            <span class="text">{{ Config::get('languages')[App::getLocale()]['name'] }}</span>
+                            <span class="image"><img src="{{Config::get('languages')[App::getLocale()]['flagSrc']}}" alt="{{ Config::get('languages')[App::getLocale()]['name'] }}"></span>
                         </a>
                     </p>
                     <ul>
-                        {{--<li><a href="/ja/"><span class="text">日本語</span><span class="image"><img src="img/language_img_01.png" alt="日本語"></span></a></li>--}}
-                        {{--<li><a href="/ja/"><span class="text">英語</span><span class="image"><img src="img/language_img_01.png" alt="英語"></span></a></li>--}}
-                        {{--<li><a href="/ja/"><span class="text">中国語</span><span class="image"><img src="img/language_img_01.png" alt="中国語"></span></a></li>--}}
+                        @foreach (Config::get('languages') as $lang => $language)
+                            @if ($lang != App::getLocale())
+                                <li>
+                                    <a href="{{ route('lang.switch', $lang) }}">
+                                        <span class="text">{{$language['name']}}</span>
+                                        <span class="image"><img src="{{$language['flagSrc']}}" alt="{{$language['name']}}"></span>
+                                    </a>
+                                </li>
+                            @endif
+                        @endforeach
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12 fv">
                     <div class="text">
-                        <h2>{{__('message.coinName')}}</h2>
+                        <h2><span>NANJ</span><span>COIN</span></h2>
                         <p class="p01">{!!__('message.nanjMean') !!}</p>
                         <p class="p02">{!!__('message.nanjMean2') !!}</p>
                     </div>
-                    <div class="image"><img src="img/header_img_02.png" alt="NANJ COIN"></div>
+                    <div class="image"><img src="/img/header_img_02.png" alt="NANJCOIN"></div>
                 </div>
             </div>
         </div>
@@ -95,7 +132,7 @@
                         <div class="col-md-6 detail">
                             <h3>{{__('message.tokenDetail')}}</h3>
                             <div class="clearfix">
-                                <p class="image"><img src="img/about_img_01.png" alt="NANJ"></p>
+                                <p class="image"><img src="/img/about_img_01.png" alt="NANJ"></p>
                                 <ul>
                                     <li>{{__('message.tokenName')}}</li>
                                     <li>{{__('message.tokenSymbol')}}</li>
@@ -133,8 +170,11 @@
             <div class="row">
                 <div class="col-12">
                     <h2>{{__('message.roadMap')}}</h2>
-                    <p class="p01">{{__('message.roadMapDescription')}}</p>
-                    <p><img class="mw-100 d-none d-lg-block" src="img/roadmap_img_01.png" alt="ROADMAP"><img class="mw-100 d-md-block d-lg-none" src="img/roadmap_img_01_sp.png" alt="ROADMAP"></p>
+                    <p class="p01">{!! __('message.roadMapDescription') !!}</p>
+                    <p>
+                        <img class="mw-100 d-none d-lg-block" src="{{ __('message.roadmapPlace') }}" alt="ROADMAP">
+                        <img class="mw-100 d-md-block d-lg-none" src="{{ __('message.roadmapPlaceSp') }}" alt="ROADMAP">
+                    </p>
                 </div>
             </div>
         </div>
@@ -145,12 +185,19 @@
                 <div class="col-lg-4" id="whitepaper">
                     <h2>{{__('message.whitePaper')}}</h2>
                     <p>
-                        <!--: a(href='' target='_blank')--><img src="img/whitepaper_btn_01_da.png" alt="DOWNLOAD">
+                        <a href="/white_paper.pdf" target="_blank"><img src="/img/whitepaper_btn_01.png" alt="DOWNLOAD"></a>
                     </p>
                 </div>
                 <div class="col-lg-4" id="wallet">
                     <h2>{{__('message.wallet')}}</h2>
-                    <p><a href="https://www.myetherwallet.com" target="_blank"><img src="img/wallet_btn_01.png" alt="MyEtherWallet"></a></p>
+                    <p class="mew"><a href="https://www.myetherwallet.com" target="_blank"><img src="/img/wallet_btn_01.png" alt="MyEtherWallet"></a></p>
+                    <div class="hbWallet">
+                      <h3><img src="img/wallet_img_01.png" alt="HB Wallet"></h3>
+                      <ul class="clearfix">
+                        <li class="left"><a href="https://play.google.com/store/apps/details?id=co.bacoor.android.hbwallet" target="_blank"><img src="img/wallet_btn_02.png" alt="Google Play"></a></li>
+                        <li class="right"><a href="https://itunes.apple.com/jp/app/hb-wallet/id1273639572?" target="_blank"><img src="img/wallet_btn_03.png" alt="App Store"></a></li>
+                      </ul>
+                    </div>
                     <p>{!! __('message.contractAddress') !!}<br>{{__('message.tokenSymbol')}}　{{__('message.numberOfDigits')}}</p>
                 </div>
                 <div class="col-lg-4" id="exchanges">
@@ -168,62 +215,88 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 offset-md-3">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
                     <div class="row">
-                        <div class="col-sm-4 twitter"><a href="https://twitter.com/nanjcoin" target="_blank">
-                                <p><img src="img/comunity_btn_01.png" alt="twitter"></p>
-                                <p>twitter</p></a></div>
-                        <div class="col-sm-4 discord"><a href="https://discord.gg/xa94m8F" target="_blank">
-                                <p><img src="img/comunity_btn_02.png" alt="discord"></p>
-                                <p>discord</p></a></div>
-                        <div class="col-sm-4 github"><a href="https://github.com/NANJ-COIN" target="_blank">
-                                <p><img src="img/comunity_btn_03.png" alt="GitHub"></p>
-                                <p>GitHub</p></a></div>
-                    </div>
+                        <div class="col-md-2 offset-md-1 blog"><a href="https://nanjcoin.net" target="_blank">
+                            <p class="icon"><img src="img/comunity_btn_04.png" alt="Blog"></p>
+                            <p class="text"><strong>B</strong>LOG</p></a></div>
+                        <div class="col-md-2 twitter"><a href="https://twitter.com/nanjcoin" target="_blank">
+                            <p class="icon"><img src="img/comunity_btn_01.png" alt="twitter"></p>
+                            <p class="text"><strong>T</strong>WITTER</p></a></div>
+                        <div class="col-md-2 discord"><a href="https://discord.gg/xa94m8F" target="_blank">
+                            <p class="icon"><img src="img/comunity_btn_02.png" alt="discord"></p>
+                            <p class="text"><strong>D</strong>ISCORD</p></a></div>
+                        <div class="col-md-2 github"><a href="https://github.com/NANJ-COIN" target="_blank">
+                            <p class="icon"><img src="img/comunity_btn_03.png" alt="GitHub"></p>
+                            <p class="text"><strong>G</strong>IT<strong>H</strong>UB</p></a></div>
+                        <div class="col-md-2 facebook"><a href="https://www.facebook.com/nanjcoin/" target="_blank">
+                            <p class="icon"><img src="img/comunity_btn_05.png" alt="Facebook"></p>
+                            <p class="text"><strong>F</strong>ACEBOOK</p></a></div>
+                      </div>
                 </div>
             </div>
         </div>
     </div>
-    {{--<div class="fadeInContents" id="airdrop">--}}
-        {{--<div class="container">--}}
-            {{--<div class="row">--}}
-                {{--<div class="col-12">--}}
-                    {{--<div class="bg">--}}
-                        {{--<h2>AIR DROP</h2>--}}
-                        {{--<p class="p01">下記フォームにETHウォレットアドレスを入力してください。今なら30,000NANJプレゼント！</p>--}}
-                        {{--<form action="/airdrop/" method="POST">--}}
-                            {{--<div>--}}
-                                {{--<input class="field" type="text" name="address" placeholder="Enter your ETH wallet address">--}}
-                                {{--<input class="button" type="submit" value="SUBMIT">--}}
-                            {{--</div>--}}
-                        {{--</form>--}}
-                        {{--<div class="status">--}}
-                            {{--<p class="thanks">送信しました。</p>--}}
-                            {{--<p class="error">正しいアドレスを入力してください。<br>0xから始まる42桁です。</p>--}}
-                            {{--<p class="error02">送信に失敗しました。</p>--}}
-                        {{--</div>--}}
-                        {{--<p class="p02">※MyEtherWalletなどERC20/ERC223トークンに対応したウォレットのアドレスを記入してください<br>取引所のウォレットアドレスを記入しても受け取ることができませんのでご注意ください</p>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
+    @isset($isShowAirDrop)
+    @if($isShowAirDrop)
+    <div class="fadeInContents" id="airdrop">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="bg">
+              <h2>AIR DROP</h2>
+              <p class="p01">下記フォームにメールアドレス及び、ETHウォレットアドレスを入力してください。もれなくNANJCOINプレゼント！<br>（NANJCOINプレゼント数は参加数に応じて変動します。くわしくは<a href="https://twitter.com/nanjcoin/status/969914949668560896">こちら</a>）</p>
+              <form action="/" method="POST">
+                  {{ csrf_field() }}
+                <div class="inputArea">
+                  <div class="row">
+                    <p class="left col-md-6">
+                      <input class="field emailAddress" type="email" name="email" placeholder="Enter your Mail address">
+                    </p>
+                    <p class="right col-md-6">
+                      <input class="field walletAddress" type="text" name="address" placeholder="Enter your ETH wallet address">
+                    </p>
+                  </div>
+                  <div class="row">
+                    <p class="button col-12">
+                      <button value="submit" type="submit"><span>SUBMIT</span></button>
+                    </p>
+                  </div>
+                </div>
+              </form>
+              <div class="status">
+                  @if ($errors->any())
+                      <ul>
+                          @foreach ($errors->all() as $error)
+                              <div class=" thanks text-center error">{{ $error }}</div>
+                          @endforeach
+                      </ul>
+                  @endif
+              </div>
+              <p class="p02">※MyEtherWalletなどERC20/ERC223トークンに対応したウォレットのアドレスを記入してください<br>取引所のウォレットアドレスを記入しても受け取ることができませんのでご注意ください</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    @endif
+    @endisset
 </main>
 <footer>
     <div id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p>© ALL RIGHTS RESERVED. NANJ COIN 2018</p>
+                    <p>© ALL RIGHTS RESERVED. NANJCOIN 2018</p>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/Chart.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/main.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/Chart.min.js"></script>
+<script src="/js/jquery.waypoints.min.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>
