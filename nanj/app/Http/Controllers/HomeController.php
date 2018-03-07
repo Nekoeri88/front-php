@@ -7,6 +7,7 @@ Use Carbon\Carbon;
 use App\Wallet;
 use Validator;
 use App\Poem;
+use LVR\IP\PublicAddress;
 
 class HomeController extends Controller
 {
@@ -19,11 +20,14 @@ class HomeController extends Controller
      */
     public function index (Request $request) {
 
+
         if ($request->isMethod('post')) {
+            $request->merge(['ip' => \Request::ip()]);
             $validator = Validator::make($request->all(),
                 [
                     'email' => 'required|email|max:64|unique:wallets',
                     'address' => 'required|size:42|unique:wallets',
+                    'ip' => 'required|unique:wallets',
                 ]
             );
             if ($validator->fails()) {
@@ -34,6 +38,8 @@ class HomeController extends Controller
                 $wallets = new Wallet();
                 $wallets->email = $request->email;
                 $wallets->address = $request->address;
+                $wallets->ip = $request->ip;
+
                 $wallets->save();
 
                 return redirect('/thanks');

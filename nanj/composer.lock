@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "811314b028a7ec08ad03f4bb36f5b9fe",
+    "content-hash": "8350b98d05353aa93a7b634fd58dd354",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -405,6 +405,52 @@
                 }
             ],
             "time": "2015-04-20T18:58:01+00:00"
+        },
+        {
+            "name": "laravel-validation-rules/ip",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-validation-rules/ip.git",
+                "reference": "766f3596b038692e8c19f2bc5bb1864b9fa0e8a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-validation-rules/ip/zipball/766f3596b038692e8c19f2bc5bb1864b9fa0e8a5",
+                "reference": "766f3596b038692e8c19f2bc5bb1864b9fa0e8a5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^5.5",
+                "symfony/http-foundation": "^3.3"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.5",
+                "phpunit/phpunit": "^6.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LVR\\IP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Ashley Clarke",
+                    "email": "me@ashleyclarke.me"
+                }
+            ],
+            "description": "Validate if an ip address is public or private.",
+            "keywords": [
+                "IP",
+                "laravel",
+                "validation"
+            ],
+            "time": "2017-09-10T13:07:56+00:00"
         },
         {
             "name": "laravel/framework",
