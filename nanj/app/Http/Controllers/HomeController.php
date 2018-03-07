@@ -22,6 +22,8 @@ class HomeController extends Controller
 
 
         if ($request->isMethod('post')) {
+            $request::setTrustedProxies([\Request::ip()]);
+
             $request->merge(['ip' => \Request::ip()]);
             $validator = Validator::make($request->all(),
                 [
