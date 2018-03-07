@@ -27,7 +27,6 @@ class HomeController extends Controller
                 [
                     'email' => 'required|email|max:64|unique:wallets',
                     'address' => 'required|size:42|unique:wallets',
-                    'ip' => 'required|unique:wallets',
                 ]
             );
             if ($validator->fails()) {
