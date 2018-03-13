@@ -42,12 +42,12 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2><img class="d-none d-sm-inline" src="img/listingapproval_img_01.png" alt="2018年3月16日21時［コインエクスチェンジ］に上場決定！"><img class="d-inline d-sm-none" src="img/listingapproval_img_01_sp.png" alt="2018年3月16日21時［コインエクスチェンジ］に上場決定！"></h2>
+            <h2><img class="d-none d-sm-inline" src="{{__('message.listingApprovalPlace')}}" alt="2018年3月16日21時［コインエクスチェンジ］に上場決定！"><img class="d-inline d-sm-none" src="{{__('message.listingApprovalPlaceSp')}}" alt="2018年3月16日21時［コインエクスチェンジ］に上場決定！"></h2>
             <div id="countdown">
-              <p class="d-block d-sm-none">上場まで</p>
+              <p class="d-block d-sm-none">{{__('message.listingApprovalUntil')}}</p>
               <div class="wrapper">
                 <dl class="clearfix">
-                  <dt class="d-none d-sm-block"><span>上場まで</span></dt>
+                  <dt class="d-none d-sm-block"><span>{{__('message.listingApprovalUntil')}}</span></dt>
                   <dd><span class="number"><strong class="days">00</strong></span><span>Days</span></dd>
                   <dd><span class="number"><strong class="hours">00</strong></span><span>Hours</span></dd>
                   <dd><span class="number"><strong class="minutes">00</strong></span><span>Minutes</span></dd>
@@ -132,7 +132,7 @@
                         <div class="col-md-6 detail">
                             <h3>{{__('message.tokenDetail')}}</h3>
                             <div class="clearfix">
-                                <p class="image"><img src="/img/about_img_01.png" alt="NANJ"></p>
+                                <p class="image"><img src="/img/about_img_01.gif" alt="NANJ"></p>
                                 <ul>
                                     <li>{{__('message.tokenName')}}</li>
                                     <li>{{__('message.tokenSymbol')}}</li>
@@ -185,7 +185,7 @@
                 <div class="col-lg-4" id="whitepaper">
                     <h2>{{__('message.whitePaper')}}</h2>
                     <p>
-                        <a href="/white_paper.pdf" target="_blank"><img src="/img/whitepaper_btn_01.png" alt="DOWNLOAD"></a>
+                        <a href="{{__('message.whitePaperPlace')}}" target="_blank"><img src="/img/whitepaper_btn_01.png" alt="DOWNLOAD"></a>
                     </p>
                 </div>
                 <div class="col-lg-4" id="wallet">

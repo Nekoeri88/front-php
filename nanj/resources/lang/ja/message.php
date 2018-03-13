@@ -37,5 +37,9 @@ return [
         'ファンとスポーツの関わり方について、新たなステージを見てみたいとは思いませんか？NANJCOINプロジェクトはプロのマーケティング集団監修のもと、実現可能なステップを進めながら着実に価値を高め続けます。',
     'roadmapPlace' => '/img/roadmap_img_01.png',
     'roadmapPlaceSp' => '/img/roadmap_img_01_sp.png',
+    'whitePaperPlace' => '/white_paper.pdf',
+    'listingApprovalPlace' => '/img/listingapproval_img_01.png',
+    'listingApprovalPlaceSp' => '/img/listingapproval_img_01_sp.png',
+    'listingApprovalUntil' => '上場まで',
 
 ];

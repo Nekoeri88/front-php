@@ -5,5 +5,5 @@
     return [
         'ja' => ['name' => '日本語', 'flagSrc' => '/img/language_img_01.png'],
         'en' => ['name' => 'English', 'flagSrc' => '/img/language_img_02.png'],
-//        'ch' => '中国語'
+        'ch' => ['name' => '中文', 'flagSrc' => '/img/language_img_03.png'],
     ];
