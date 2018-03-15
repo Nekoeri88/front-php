@@ -200,7 +200,11 @@
                 </div>
                 <div class="col-lg-4" id="exchanges">
                     <h2>{{__('message.exchanges')}}</h2>
-                    <p>Coming<br>Soon!</p>
+                    @if(isset($isShowCountDown) and $isShowCountDown)
+                      <p class="commingSoon">Coming<br>Soon!</p>
+                    @else
+                      <p class="coinExchange"><a href="https://www.coinexchange.io/market/NANJ/BTC" target="_blank"><img src="/img/exchange_btn_01.png" alt="COINEXCHANGE.io"></a></p>
+                    @endif
                 </div>
             </div>
         </div>

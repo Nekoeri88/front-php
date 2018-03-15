@@ -10007,6 +10007,8 @@ main .fadeInContents > .container.fadeIn {
 
 #wallet p.mew img {
   max-width: 300px;
+  width: 100%;
+  height: auto;
 }
 
 #wallet .hbWallet {
@@ -10022,6 +10024,8 @@ main .fadeInContents > .container.fadeIn {
 
 #wallet .hbWallet h3 img {
   max-width: 195px;
+  width: 100%;
+  height: auto;
 }
 
 #wallet .hbWallet ul {
@@ -10068,7 +10072,7 @@ main .fadeInContents > .container.fadeIn {
   }
 }
 
-#exchanges p {
+#exchanges p.commingSoon {
   font-family: 'Sarpanch', sans-serif;
   -webkit-transform: scaleY(0.75);
           transform: scaleY(0.75);
@@ -10080,6 +10084,17 @@ main .fadeInContents > .container.fadeIn {
   font-size: 60px;
   line-height: 1.2em;
   text-align: center;
+}
+
+#exchanges p.coinExchange {
+  padding: 55px 0;
+  text-align: center;
+}
+
+#exchanges p.coinExchange img {
+  width: 100%;
+  height: auto;
+  max-width: 280px;
 }
 
 /*------------------------------
