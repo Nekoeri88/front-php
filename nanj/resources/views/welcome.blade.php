@@ -60,7 +60,7 @@
         @isset($isShowAirDrop)
         @if($isShowAirDrop)
         <div class="row" id="airdropInformation">
-          <div class="col-12"><a href="#airdrop"><img class="d-none d-sm-inline" src="img/listingapproval_btn_01.gif" alt="CoinExchange上場を記念してAIR DROP開催中！（AIR DROP締切 2018年3月10日23時59分迄）"><img class="d-inline d-sm-none" src="img/listingapproval_btn_01_sp.gif" alt="CoinExchange上場を記念してAIR DROP開催中！（AIR DROP締切 2018年3月10日23時59分迄）"></a></div>
+          <div class="col-12"><a href="#airdrop"><img class="d-none d-sm-inline" src="/img/listingapproval_btn_01.gif" alt="CoinExchange上場を記念してAIR DROP開催中！（AIR DROP締切 2018年3月10日23時59分迄）"><img class="d-inline d-sm-none" src="/img/listingapproval_btn_01_sp.gif" alt="CoinExchange上場を記念してAIR DROP開催中！（AIR DROP締切 2018年3月10日23時59分迄）"></a></div>
         </div>
         @endif
         @endisset
@@ -190,10 +190,10 @@
                     <h2>{{__('message.wallet')}}</h2>
                     <p class="mew"><a href="https://www.myetherwallet.com" target="_blank"><img src="/img/wallet_btn_01.png" alt="MyEtherWallet"></a></p>
                     <div class="hbWallet">
-                      <h3><img src="img/wallet_img_01.png" alt="HB Wallet"></h3>
+                      <h3><img src="/img/wallet_img_01.png" alt="HB Wallet"></h3>
                       <ul class="clearfix">
-                        <li class="left"><a href="https://play.google.com/store/apps/details?id=co.bacoor.android.hbwallet" target="_blank"><img src="img/wallet_btn_02.png" alt="Google Play"></a></li>
-                        <li class="right"><a href="https://itunes.apple.com/jp/app/hb-wallet/id1273639572?" target="_blank"><img src="img/wallet_btn_03.png" alt="App Store"></a></li>
+                        <li class="left"><a href="https://play.google.com/store/apps/details?id=co.bacoor.android.hbwallet" target="_blank"><img src="/img/wallet_btn_02.png" alt="Google Play"></a></li>
+                        <li class="right"><a href="https://itunes.apple.com/jp/app/hb-wallet/id1273639572?" target="_blank"><img src="/img/wallet_btn_03.png" alt="App Store"></a></li>
                       </ul>
                     </div>
                     <p>{!! __('message.contractAddress') !!}<br>{{__('message.tokenSymbol')}}　{{__('message.numberOfDigits')}}</p>
@@ -220,19 +220,19 @@
                 <div class="col-lg-10 offset-lg-1 col-md-12">
                     <div class="row">
                         <div class="col-md-2 offset-md-1 blog"><a href="https://nanjcoin.net" target="_blank">
-                            <p class="icon"><img src="img/comunity_btn_04.png" alt="Blog"></p>
+                            <p class="icon"><img src="/img/comunity_btn_04.png" alt="Blog"></p>
                             <p class="text"><strong>B</strong>LOG</p></a></div>
                         <div class="col-md-2 twitter"><a href="https://twitter.com/nanjcoin" target="_blank">
-                            <p class="icon"><img src="img/comunity_btn_01.png" alt="twitter"></p>
+                            <p class="icon"><img src="/img/comunity_btn_01.png" alt="twitter"></p>
                             <p class="text"><strong>T</strong>WITTER</p></a></div>
                         <div class="col-md-2 discord"><a href="https://discord.gg/xa94m8F" target="_blank">
-                            <p class="icon"><img src="img/comunity_btn_02.png" alt="discord"></p>
+                            <p class="icon"><img src="/img/comunity_btn_02.png" alt="discord"></p>
                             <p class="text"><strong>D</strong>ISCORD</p></a></div>
                         <div class="col-md-2 github"><a href="https://github.com/NANJ-COIN" target="_blank">
-                            <p class="icon"><img src="img/comunity_btn_03.png" alt="GitHub"></p>
+                            <p class="icon"><img src="/img/comunity_btn_03.png" alt="GitHub"></p>
                             <p class="text"><strong>G</strong>IT<strong>H</strong>UB</p></a></div>
                         <div class="col-md-2 facebook"><a href="https://www.facebook.com/nanjcoin/" target="_blank">
-                            <p class="icon"><img src="img/comunity_btn_05.png" alt="Facebook"></p>
+                            <p class="icon"><img src="/img/comunity_btn_05.png" alt="Facebook"></p>
                             <p class="text"><strong>F</strong>ACEBOOK</p></a></div>
                       </div>
                 </div>
