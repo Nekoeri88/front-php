@@ -90,8 +90,7 @@
                 <div class="col-md-2 col-sm-5 col-3 language">
                     <p>
                         <a href="{{ App::getLocale() }}">
-                            <span class="text">{{ Config::get('languages')[App::getLocale()]['name'] }}</span>
-                            <span class="image"><img src="{{Config::get('languages')[App::getLocale()]['flagSrc']}}" alt="{{ Config::get('languages')[App::getLocale()]['name'] }}"></span>
+                          <span class="text">{{ Config::get('languages')[App::getLocale()]['name'] }}</span><span class="image"><img src="{{Config::get('languages')[App::getLocale()]['flagSrc']}}" alt="{{ Config::get('languages')[App::getLocale()]['name'] }}"></span>
                         </a>
                     </p>
                     <ul>
@@ -99,8 +98,7 @@
                             @if ($lang != App::getLocale())
                                 <li>
                                     <a href="{{ route('lang.switch', $lang) }}">
-                                        <span class="text">{{$language['name']}}</span>
-                                        <span class="image"><img src="{{$language['flagSrc']}}" alt="{{$language['name']}}"></span>
+                                      <span class="text">{{$language['name']}}</span><span class="image"><img src="{{$language['flagSrc']}}" alt="{{$language['name']}}"></span>
                                     </a>
                                 </li>
                             @endif
