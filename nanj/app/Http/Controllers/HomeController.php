@@ -46,7 +46,7 @@ class HomeController extends Controller
                 return redirect('/thanks');
             }
         }
-        $view['isShowCountDown'] = $this->dateCheck('2018-3-16 21:00:00');
+        $view['isShowCountDown'] = $this->dateCheck('2018-3-16 15:16:00');
         $view['isShowAirDrop'] = $this->dateCheck('2018-3-10 23:59:59');
 
         return view('welcome', $view);
