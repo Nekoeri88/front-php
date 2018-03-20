@@ -9957,6 +9957,7 @@ main .fadeInContents > .container.fadeIn {
 #whitepaper {
   padding-top: 110px;
   padding-bottom: 110px;
+  text-align: center;
 }
 
 @media (max-width: 767.98px) {
@@ -9967,10 +9968,33 @@ main .fadeInContents > .container.fadeIn {
 }
 
 #whitepaper p {
-  text-align: center;
+  margin-bottom: 18px;
+}
+
+#whitepaper p img {
+  max-width: 120px;
+}
+
+#whitepaper ul {
+  margin: 0;
+  padding: 0;
+}
+
+#whitepaper ul li {
+  list-style: none;
+}
+
+#whitepaper ul li {
+  margin-bottom: 15px;
+}
+
+#whitepaper ul li:last-of-type {
+  margin-bottom: 0;
 }
 
 #whitepaper img {
+  width: 100%;
+  height: auto;
   max-width: 190px;
 }
 

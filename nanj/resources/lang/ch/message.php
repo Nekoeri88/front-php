@@ -37,7 +37,7 @@ return [
         '想看看粉丝与体育竞技的互动新境界吗？NANJCOIN计划在专业开发与营销团体的监督指导之下，坚实地踏出实现可能的每一步，造就更高的自身价值。',
     'roadmapPlace' => '/img/roadmap_img_03.png',
     'roadmapPlaceSp' => '/img/roadmap_img_03_sp.png',
-    'whitePaperPlace' => '/white_paper_en.pdf',
+    'whitePaperJaButtonPlace' => '/img/whitepaper_btn_03.png',
     'listingApprovalPlace' => '/img/listingapproval_img_02.png',
     'listingApprovalPlaceSp' => '/img/listingapproval_img_02_sp.png',
     'listingApprovalUntil' => 'Left',

@@ -182,9 +182,11 @@
             <div class="row">
                 <div class="col-lg-4" id="whitepaper">
                     <h2>{{__('message.whitePaper')}}</h2>
-                    <p>
-                        <a href="{{__('message.whitePaperPlace')}}" target="_blank"><img src="/img/whitepaper_btn_01.png" alt="DOWNLOAD"></a>
-                    </p>
+                    <p><img src="/img/whitepaper_img_01.png" alt=""></p>
+                    <ul>
+                      <li><a href="/white_paper.pdf" target="_blank"><img src="{{__('message.whitePaperJaButtonPlace')}}" alt="JAPANESE"></a></li>
+                      <li><a href="/white_paper_en.pdf" target="_blank"><img src="/img/whitepaper_btn_02.png" alt="ENGLISH"></a></li>
+                    </ul>
                 </div>
                 <div class="col-lg-4" id="wallet">
                     <h2>{{__('message.wallet')}}</h2>
