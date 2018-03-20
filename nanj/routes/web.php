@@ -11,12 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+    /**
+     * TOP表示
+     */
+    Route::match(['get', 'post'], '/', 'HomeController@index');
 
-Route::get('/{locale}', function ($locale) {
-    App::setLocale($locale);
-    return view('welcome');
-});
+    /**
+     * 完了画面表示
+     */
+    Route::post('/thanks', 'HomeController@thanks');
 
+    /**
+     * 言語切替
+     */
+    Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'LanguageController@switchLang']);
+
+    /**
+     * 川柳表示
+     */
+    Route::get('/poem', 'HomeController@poem');

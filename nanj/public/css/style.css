@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -9032,7 +9031,7 @@ body {
   color: #8ba1b1;
   font-size: 14px;
   line-height: 1.6em;
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   letter-spacing: -0.001em;
 }
@@ -9040,6 +9039,226 @@ body {
 a,
 a:hover {
   color: #8ba1b1;
+}
+
+/*------------------------------
+  #header
+------------------------------*/
+#listingApproval {
+  background: #010203;
+  color: #ffffff;
+}
+
+#listingApproval h2 {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 5.26316%;
+}
+
+@media (max-width: 575.98px) {
+  #listingApproval h2 {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 24.375%;
+  }
+}
+
+#listingApproval h2 img {
+  width: 100%;
+  height: auto;
+}
+
+#countdown {
+  position: absolute;
+  left: 0;
+  bottom: 5.76%;
+  width: 100%;
+}
+
+@media (max-width: 575.98px) {
+  #countdown {
+    width: 100%;
+    bottom: 3.78788%;
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+#countdown p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#countdown .wrapper {
+  margin: 0 -1.5%;
+}
+
+#countdown dl {
+  margin: 0 15.85586% 0 11.53153%;
+}
+
+@media (max-width: 575.98px) {
+  #countdown dl {
+    display: table;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+#countdown dl dt {
+  position: relative;
+  float: left;
+  width: 14.77833%;
+  padding-top: 15.76355%;
+  text-align: center;
+}
+
+#countdown dl dt span {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 100%;
+  margin: -11px 0 0;
+  font-size: 23px;
+  line-height: 1em;
+  word-break: break-all;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #countdown dl dt span {
+    margin-top: -9.2158px;
+    font-size: 19.2694px;
+    line-height: 19.2694px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #countdown dl dt span {
+    margin-top: -6.8376px;
+    font-size: 14.2968px;
+    line-height: 14.2968px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #countdown dl dt span {
+    margin-top: -5.0534px;
+    font-size: 10.5662px;
+    line-height: 10.5662px;
+  }
+}
+
+#countdown dl dd {
+  float: left;
+  display: block;
+  width: 19.45813%;
+  margin: 0 2.21675% 0 0;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.4em;
+}
+
+#countdown dl dd:last-of-type {
+  margin-right: 0;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #countdown dl dd {
+    font-size: 10px;
+    line-height: 1.4em;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #countdown dl dd {
+    float: none;
+    display: table-cell;
+    width: 25%;
+    padding: 0 1.5%;
+    font-size: 9px;
+    line-height: 1.4em;
+  }
+}
+
+#countdown dl dd .number {
+  position: relative;
+  display: block;
+  margin-bottom: 2.75862%;
+  padding: 81.01266% 0 0;
+  background: url(../img/listingapproval_bg_01.png) no-repeat left top;
+  background-size: 100% auto;
+}
+
+@media (max-width: 575.98px) {
+  #countdown dl dd .number {
+    padding: 100% 0 0;
+    background: url(../img/listingapproval_bg_01_sp.png) no-repeat center top;
+    background-size: 100% auto;
+  }
+}
+
+#countdown dl dd .number strong {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  width: 100%;
+  margin: -40px 0 0;
+  font-size: 80px;
+  line-height: 1em;
+  font-weight: normal;
+  font-family: 'Sarpanch', sans-serif;
+  -webkit-transform: scaleY(0.8);
+          transform: scaleY(0.8);
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #countdown dl dd .number strong {
+    margin-top: -33.512px;
+    font-size: 67.024px;
+    line-height: 67.024px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #countdown dl dd .number strong {
+    margin-top: -24.864px;
+    font-size: 49.728px;
+    line-height: 49.728px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #countdown dl dd .number strong {
+    margin-top: -18.376px;
+    font-size: 36.752px;
+    line-height: 36.752px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #countdown dl dd .number strong {
+    margin-top: -21px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
+
+#airdropInformation {
+  padding-bottom: 2.88288%;
+  text-align: center;
+}
+
+#airdropInformation img {
+  width: 74.21%;
+  height: auto;
+}
+
+@media (max-width: 575.98px) {
+  #airdropInformation img {
+    width: 100%;
+  }
 }
 
 /*------------------------------
@@ -9738,6 +9957,7 @@ main .fadeInContents > .container.fadeIn {
 #whitepaper {
   padding-top: 110px;
   padding-bottom: 110px;
+  text-align: center;
 }
 
 @media (max-width: 767.98px) {
@@ -9748,10 +9968,33 @@ main .fadeInContents > .container.fadeIn {
 }
 
 #whitepaper p {
-  text-align: center;
+  margin-bottom: 18px;
+}
+
+#whitepaper p img {
+  max-width: 120px;
+}
+
+#whitepaper ul {
+  margin: 0;
+  padding: 0;
+}
+
+#whitepaper ul li {
+  list-style: none;
+}
+
+#whitepaper ul li {
+  margin-bottom: 15px;
+}
+
+#whitepaper ul li:last-of-type {
+  margin-bottom: 0;
 }
 
 #whitepaper img {
+  width: 100%;
+  height: auto;
   max-width: 190px;
 }
 
@@ -9781,8 +10024,61 @@ main .fadeInContents > .container.fadeIn {
   ine-height: 1.6em;
 }
 
-#wallet img {
-  max-width: 239px;
+#wallet p.mew {
+  padding-top: 0;
+  margin-bottom: 20px;
+}
+
+#wallet p.mew img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+#wallet .hbWallet {
+  padding: 14px 8px 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+
+#wallet .hbWallet h3 {
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+#wallet .hbWallet h3 img {
+  max-width: 195px;
+  width: 100%;
+  height: auto;
+}
+
+#wallet .hbWallet ul {
+  margin: 0;
+  padding: 0;
+  display: table;
+  max-width: 334px;
+  margin: 0 auto;
+}
+
+#wallet .hbWallet ul li {
+  list-style: none;
+}
+
+#wallet .hbWallet ul li {
+  display: table-cell;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#wallet .hbWallet ul li a {
+  display: block;
+  padding: 0 5px;
+}
+
+#wallet .hbWallet ul li a img {
+  width: 100%;
+  height: auto;
 }
 
 /*------------------------------
@@ -9800,7 +10096,7 @@ main .fadeInContents > .container.fadeIn {
   }
 }
 
-#exchanges p {
+#exchanges p.commingSoon {
   font-family: 'Sarpanch', sans-serif;
   -webkit-transform: scaleY(0.75);
           transform: scaleY(0.75);
@@ -9812,6 +10108,17 @@ main .fadeInContents > .container.fadeIn {
   font-size: 60px;
   line-height: 1.2em;
   text-align: center;
+}
+
+#exchanges p.coinExchange {
+  padding: 55px 0;
+  text-align: center;
+}
+
+#exchanges p.coinExchange img {
+  width: 100%;
+  height: auto;
+  max-width: 280px;
 }
 
 /*------------------------------
@@ -9858,6 +10165,31 @@ main .fadeInContents > .container.fadeIn {
   text-align: center;
 }
 
+#community p.icon {
+  margin-bottom: 10px;
+}
+
+#community p.text {
+  font-family: 'Sarpanch', sans-serif;
+  -webkit-transform: scaleY(0.75);
+          transform: scaleY(0.75);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  letter-spacing: 0.12em;
+  line-height: 1.6em;
+  font-weight: normal;
+}
+
+#community p.text strong {
+  font-size: 18px;
+  line-height: 1.6em;
+  font-weight: normal;
+}
+
+#community .blog img {
+  max-width: 58px;
+}
+
 #community .twitter img {
   max-width: 63px;
 }
@@ -9868,6 +10200,10 @@ main .fadeInContents > .container.fadeIn {
 
 #community .github img {
   max-width: 61px;
+}
+
+#community .facebook img {
+  max-width: 48px;
 }
 
 /*------------------------------
@@ -9901,7 +10237,7 @@ main .fadeInContents > .container.fadeIn {
 
 @media (max-width: 575.98px) {
   #airdrop .bg {
-    padding: 60px 15px 80px;
+    padding: 60px 15px;
     background: #184363;
     border-radius: 10px;
   }
@@ -9933,20 +10269,31 @@ main .fadeInContents > .container.fadeIn {
 }
 
 #airdrop .bg .p01 {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-#airdrop .bg form {
+#airdrop .bg .inputArea {
   position: relative;
-  max-width: 560px;
+  max-width: 930px;
   margin: 0 auto 20px;
 }
 
-#airdrop .bg form .field {
+@media (min-width: 768px) {
+  #airdrop .bg .inputArea p {
+    margin-bottom: 20px;
+  }
+  #airdrop .bg .inputArea .left {
+    padding-right: 10px;
+  }
+  #airdrop .bg .inputArea .right {
+    padding-left: 10px;
+  }
+}
+
+#airdrop .bg .inputArea .field {
   width: 100%;
-  height: 42px;
-  padding: 8px 118px 0 19px;
+  padding: 12px 25px;
   background: #ffffff;
   color: #6b8ba9;
   border: 1px solid;
@@ -9957,29 +10304,35 @@ main .fadeInContents > .container.fadeIn {
           box-sizing: border-box;
 }
 
-#airdrop .bg form .button {
+#airdrop .bg .inputArea .button {
+  text-align: center;
+}
+
+#airdrop .bg .inputArea .button button {
+  margin: 0;
+  padding: 6px 50px 4px;
+  background: #fecc02;
+  color: #0a2539;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#airdrop .bg .inputArea .button button span {
   font-family: 'Sarpanch', sans-serif;
   -webkit-transform: scaleY(0.75);
           transform: scaleY(0.75);
   -webkit-transform-origin: left top;
           transform-origin: left top;
   letter-spacing: 0.12em;
-  position: absolute;
-  height: 40px;
-  margin: 0;
-  padding: 0 20px;
-  top: 6px;
-  right: 6px;
-  background: #fecc02;
-  color: #0a2539;
-  border: none;
-  border-radius: 10px;
-  font-size: 14px;
-  line-height: 14px;
-  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1em;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
 }
 
-#airdrop .bg form .button[disabled] {
+#airdrop .bg .inputArea .button button[disabled] {
   background: #cccccc;
   cursor: not-allowed;
 }
