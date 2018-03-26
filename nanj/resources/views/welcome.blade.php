@@ -290,7 +290,7 @@
           <div class="row">
             <div class="col-lg-8 col-md-10 col-sm-12 offset-lg-2 offset-md-1 offset-sm-0">
               <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
-              <div class="coinmarketcap-currency-widget" data-currencyid="2595" data-base="JPY" data-secondary="BTC" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="false"></div>
+              <div class="coinmarketcap-currency-widget" data-currencyid="2595" data-base="{{__('message.cryptocurrencySymbol')}}" data-secondary="BTC" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="{{__('message.cryptocurrencySymbol')}}" data-statsticker="false"></div>
             </div>
           </div>
         </div>

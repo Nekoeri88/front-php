@@ -41,5 +41,6 @@ return [
     'listingApprovalPlace' => '/img/listingapproval_img_01.png',
     'listingApprovalPlaceSp' => '/img/listingapproval_img_01_sp.png',
     'listingApprovalUntil' => '上場まで',
+    'cryptocurrencySymbol' => 'JPY',
 
 ];
