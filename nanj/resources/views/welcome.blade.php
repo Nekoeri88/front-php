@@ -221,7 +221,7 @@
             <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-md-12">
                     <div class="row">
-                        <div class="col-md-2 offset-md-1 blog"><a href="https://nanjcoin.net" target="_blank">
+                        <div class="col-md-2 offset-md-1 blog"><a href="https://nanjcoin.com/blog" target="_blank">
                             <p class="icon"><img src="/img/comunity_btn_04.png" alt="Blog"></p>
                             <p class="text"><strong>B</strong>LOG</p></a></div>
                         <div class="col-md-2 twitter"><a href="https://twitter.com/nanjcoin" target="_blank">
