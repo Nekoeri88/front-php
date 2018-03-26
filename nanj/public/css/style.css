@@ -10354,6 +10354,18 @@ main .fadeInContents > .container.fadeIn {
 }
 
 /*------------------------------
+  #price
+------------------------------*/
+#price {
+  padding-bottom: 110px;
+  color: #ffffff;
+}
+
+#price div {
+  border-color: #8ba1b1 !important;
+}
+
+/*------------------------------
   #footer
 ------------------------------*/
 #footer {

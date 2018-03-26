@@ -41,5 +41,7 @@ return [
     'listingApprovalPlace' => '/img/listingapproval_img_02.png',
     'listingApprovalPlaceSp' => '/img/listingapproval_img_02_sp.png',
     'listingApprovalUntil' => 'Left',
+    'cryptocurrencySymbol' => 'CNY',
+    
 
 ];

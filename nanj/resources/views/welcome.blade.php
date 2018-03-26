@@ -221,7 +221,7 @@
             <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-md-12">
                     <div class="row">
-                        <div class="col-md-2 offset-md-1 blog"><a href="https://nanjcoin.net" target="_blank">
+                        <div class="col-md-2 offset-md-1 blog"><a href="https://nanjcoin.com/blog" target="_blank">
                             <p class="icon"><img src="/img/comunity_btn_04.png" alt="Blog"></p>
                             <p class="text"><strong>B</strong>LOG</p></a></div>
                         <div class="col-md-2 twitter"><a href="https://twitter.com/nanjcoin" target="_blank">
@@ -285,6 +285,16 @@
     </div>
     @endif
     @endisset
+    <div class="fadeInContents" id="price">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-10 col-sm-12 offset-lg-2 offset-md-1 offset-sm-0">
+              <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+              <div class="coinmarketcap-currency-widget" data-currencyid="2595" data-base="{{__('message.cryptocurrencySymbol')}}" data-secondary="BTC" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="{{__('message.cryptocurrencySymbol')}}" data-statsticker="false"></div>
+            </div>
+          </div>
+        </div>
+      </div>
 </main>
 <footer>
     <div id="footer">
