@@ -30,3 +30,7 @@
      * 川柳表示
      */
     Route::get('/poem', 'HomeController@poem');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

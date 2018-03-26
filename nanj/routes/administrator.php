@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
-
 /*
 |--------------------------------------------------------------------------
 | Administrator Routes
@@ -9,5 +7,5 @@ use Illuminate\Http\Request;
 |
 */
 
-
 Route::get('/', ['as' => '', 'uses' => 'BaseController@getDashboard']);
+// Route::get('/logout', ['as' => 'logout', 'uses' => 'Auth\AuthController@getLogout']);
