@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\Administrator;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -16,6 +16,11 @@ class BaseController extends Controller
     function __contruct()
     {
         //
+    }
+
+    public function getDashboard (Request $request) 
+    {
+        return view('administrator.dashboard');
     }
 
 }
