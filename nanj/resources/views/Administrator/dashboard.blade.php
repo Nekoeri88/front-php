@@ -73,28 +73,28 @@
                                         <div class="message-center">
                                             <!-- Message -->
                                             <a href="#">
-                                                <div class="user-img"> <img src="assets/images/users/5.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                                <div class="user-img"> <img src="{{ENV('APP_URL')}}/assets/images/users/5.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
                                                 <div class="mail-contnet">
                                                     <h5>Michael Qin</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span>
                                                 </div>
                                             </a>
                                             <!-- Message -->
                                             <a href="#">
-                                                <div class="user-img"> <img src="assets/images/users/2.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                                                <div class="user-img"> <img src="{{ENV('APP_URL')}}/assets/images/users/2.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
                                                 <div class="mail-contnet">
                                                     <h5>John Doe</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span>
                                                 </div>
                                             </a>
                                             <!-- Message -->
                                             <a href="#">
-                                                <div class="user-img"> <img src="assets/images/users/3.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                                                <div class="user-img"> <img src="{{ENV('APP_URL')}}/assets/images/users/3.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
                                                 <div class="mail-contnet">
                                                     <h5>Mr. John</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span>
                                                 </div>
                                             </a>
                                             <!-- Message -->
                                             <a href="#">
-                                                <div class="user-img"> <img src="assets/images/users/4.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                                                <div class="user-img"> <img src="{{ENV('APP_URL')}}/assets/images/users/4.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
                                                 <div class="mail-contnet">
                                                     <h5>Michael Qin</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span>
                                                 </div>
@@ -110,14 +110,16 @@
                         <!-- End Messages -->
                         <!-- Profile -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/users/5.jpg" alt="user" class="profile-pic" /></a>
+                            <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ENV('APP_URL')}}/assets/images/users/5.jpg" alt="user" class="profile-pic" /></a>
                             <div class="dropdown-menu dropdown-menu-right animated zoomIn">
                                 <ul class="dropdown-user">
                                     <li><a href="#"><i class="ti-user"></i> Profile</a></li>
                                     <li><a href="#"><i class="ti-wallet"></i> Balance</a></li>
                                     <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
                                     <li><a href="#"><i class="ti-settings"></i> Setting</a></li>
-                                    <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                                    <li><a onclick="$('#formLogout').submit()" style="cursor: pointer;"><i class="fa fa-power-off"></i> Logout</a></li>
+                                    {!! Form::open(array('url' => route('logout'), 'method' => 'POST', 'files'=> true, 'class' => '', 'id' => 'formLogout', 'role' => 'form')) !!}
+                                    {!! Form::close() !!}
                                 </ul>
                             </div>
                         </li>
@@ -381,7 +383,7 @@
                                 <div class="testimonial-widget-one owl-carousel owl-theme">
                                     <div class="item">
                                         <div class="testimonial-content">
-                                            <img class="testimonial-author-img" src="assets/images/avatar/2.jpg" alt="" />
+                                            <img class="testimonial-author-img" src="{{ENV('APP_URL')}}/assets/images/avatar/2.jpg" alt="" />
                                             <div class="testimonial-author">John</div>
                                             <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
 
@@ -393,7 +395,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="testimonial-content">
-                                            <img class="testimonial-author-img" src="assets/images/avatar/3.jpg" alt="" />
+                                            <img class="testimonial-author-img" src="{{ENV('APP_URL')}}/assets/images/avatar/3.jpg" alt="" />
                                             <div class="testimonial-author">Abraham</div>
                                             <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
 
@@ -405,7 +407,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="testimonial-content">
-                                            <img class="testimonial-author-img" src="assets/images/avatar/1.jpg" alt="" />
+                                            <img class="testimonial-author-img" src="{{ENV('APP_URL')}}/assets/images/avatar/1.jpg" alt="" />
                                             <div class="testimonial-author">Lincoln</div>
                                             <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
 
@@ -417,7 +419,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="testimonial-content">
-                                            <img class="testimonial-author-img" src="assets/images/avatar/4.jpg" alt="" />
+                                            <img class="testimonial-author-img" src="{{ENV('APP_URL')}}/assets/images/avatar/4.jpg" alt="" />
                                             <div class="testimonial-author">TYRION LANNISTER</div>
                                             <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
 
@@ -429,7 +431,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="testimonial-content">
-                                            <img class="testimonial-author-img" src="assets/images/avatar/5.jpg" alt="" />
+                                            <img class="testimonial-author-img" src="{{ENV('APP_URL')}}/assets/images/avatar/5.jpg" alt="" />
                                             <div class="testimonial-author">TYRION LANNISTER</div>
                                             <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
 
@@ -441,7 +443,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="testimonial-content">
-                                            <img class="testimonial-author-img" src="assets/images/avatar/6.jpg" alt="" />
+                                            <img class="testimonial-author-img" src="{{ENV('APP_URL')}}/assets/images/avatar/6.jpg" alt="" />
                                             <div class="testimonial-author">TYRION LANNISTER</div>
                                             <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
 
@@ -477,7 +479,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="round-img">
-                                                        <a href=""><img src="assets/images/avatar/4.jpg" alt=""></a>
+                                                        <a href=""><img src="{{ENV('APP_URL')}}/assets/images/avatar/4.jpg" alt=""></a>
                                                     </div>
                                                 </td>
                                                 <td>John Abraham</td>
@@ -488,7 +490,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="round-img">
-                                                        <a href=""><img src="assets/images/avatar/2.jpg" alt=""></a>
+                                                        <a href=""><img src="{{ENV('APP_URL')}}/assets/images/avatar/2.jpg" alt=""></a>
                                                     </div>
                                                 </td>
                                                 <td>John Abraham</td>
@@ -499,7 +501,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="round-img">
-                                                        <a href=""><img src="assets/images/avatar/3.jpg" alt=""></a>
+                                                        <a href=""><img src="{{ENV('APP_URL')}}/assets/images/avatar/3.jpg" alt=""></a>
                                                     </div>
                                                 </td>
                                                 <td>John Abraham</td>
@@ -510,7 +512,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="round-img">
-                                                        <a href=""><img src="assets/images/avatar/4.jpg" alt=""></a>
+                                                        <a href=""><img src="{{ENV('APP_URL')}}/assets/images/avatar/4.jpg" alt=""></a>
                                                     </div>
                                                 </td>
                                                 <td>John Abraham</td>
@@ -538,7 +540,7 @@
 								<div class="recent-comment">
 									<div class="media">
 										<div class="media-left">
-											<a href="#"><img alt="..." src="assets/images/avatar/1.jpg" class="media-object"></a>
+											<a href="#"><img alt="..." src="{{ENV('APP_URL')}}/assets/images/avatar/1.jpg" class="media-object"></a>
 										</div>
 										<div class="media-body">
 											<h4 class="media-heading">john doe</h4>
@@ -548,7 +550,7 @@
 									</div>
 									<div class="media">
 										<div class="media-left">
-											<a href="#"><img alt="..." src="assets/images/avatar/1.jpg" class="media-object"></a>
+											<a href="#"><img alt="..." src="{{ENV('APP_URL')}}/assets/images/avatar/1.jpg" class="media-object"></a>
 										</div>
 										<div class="media-body">
 											<h4 class="media-heading">john doe</h4>
@@ -559,7 +561,7 @@
 
 									<div class="media">
 										<div class="media-left">
-											<a href="#"><img alt="..." src="assets/images/avatar/1.jpg" class="media-object"></a>
+											<a href="#"><img alt="..." src="{{ENV('APP_URL')}}/assets/images/avatar/1.jpg" class="media-object"></a>
 										</div>
 										<div class="media-body">
 											<h4 class="media-heading">john doe</h4>
@@ -570,7 +572,7 @@
 
 									<div class="media no-border">
 										<div class="media-left">
-											<a href="#"><img alt="..." src="assets/images/avatar/1.jpg" class="media-object"></a>
+											<a href="#"><img alt="..." src="{{ENV('APP_URL')}}/assets/images/avatar/1.jpg" class="media-object"></a>
 										</div>
 										<div class="media-body">
 											<h4 class="media-heading">Mr. Michael</h4>

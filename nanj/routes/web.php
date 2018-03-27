@@ -38,7 +38,9 @@
     /**
     * admin authentication
     */
-    // Route::post('administrator/logout', 'Administrator\BaseController@logout');
+    Route::get('administrator/register', ['as' => 'administrator.register', 'uses' => 'Auth\AdminLoginController@getLogin']);
     Route::get('administrator/login', ['as' => 'administrator.login', 'uses' => 'Auth\AdminLoginController@getLogin']);
     Route::post('administrator/login', ['as' => 'administrator.login', 'uses' => 'Auth\AdminLoginController@postLogin']);
+    Route::get('administrator/logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
+    Route::get('user/logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
 

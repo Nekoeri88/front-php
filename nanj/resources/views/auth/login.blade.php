@@ -41,14 +41,14 @@
                             <div class="login-form">
                                 <h4>Login</h4>
                                 @if (count($errors) > 0) 
-                                        @foreach ($errors->all() as $error) 
-                                        <div class="alert alert-micro alert-border-left alert-danger alert-dismissable">
-                                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                                            <i class="fa fa-check pr10"></i>
-                                            {{ $error }}
-                                        </div>
-                                        @endforeach 
-                                    @endif
+                                    @foreach ($errors->all() as $error) 
+                                    <div class="alert alert-micro alert-border-left alert-danger alert-dismissable">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                        <i class="fa fa-check pr10"></i>
+                                        {{ $error }}
+                                    </div>
+                                    @endforeach 
+                                @endif
                                 {!! Form::open(array('url' => URL::current(), 'method' => 'post', 'files'=> true)) !!}
                                     <div class="form-group">
                                         {!! Form::label('email', 'Email address') !!}
@@ -56,7 +56,7 @@
                                     </div>
                                     <div class="form-group">
                                         {!! Form::label('password', 'Password') !!}
-                                        <input type="password" name="password"  class="form-control" placeholder="Enter your Password">
+                                        {!! Form::password('password',array('class' => 'form-control', 'placeholder' => 'Enter your password')) !!}
                                     </div>
                                     <div class="checkbox">
                                         <label>
@@ -69,7 +69,7 @@
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Sign in</button>
                                     <div class="register-link m-t-15 text-center">
-                                        <p>Don't have account ? <a href="#"> Sign Up Here</a></p>
+                                        <p>Don't have account ? <a href="{{(Request::is('login') ? route('register') : route('administrator.register'))}}"> Sign Up Here</a></p>
                                     </div>
                                 </form>
                             </div>

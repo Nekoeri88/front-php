@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Administrator;
+namespace App\Http\Controllers\User;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
@@ -18,17 +18,17 @@ class BaseController extends Controller
 {
 	protected $user;
 
-	protected $redirectTo = '/dashboard';
+	protected $redirectTo = '/user';
 
 
     function __contruct(Request $request)
     {
-
+    	
     }
 
-    public function getDashboard (Request $request, Guard $auth) 
+    public function getProfile (Request $request, Guard $auth) 
     {
-        return view('administrator.dashboard');
+        return view('user.profile');
     }
 
     public function getLogout (Request $request) 
