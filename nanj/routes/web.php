@@ -31,6 +31,14 @@
      */
     Route::get('/poem', 'HomeController@poem');
 
-Auth::routes();
+    Route::get('/home', 'HomeController@index')->name('home');
+    
+    Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+    /**
+    * admin authentication
+    */
+    // Route::post('administrator/logout', 'Administrator\BaseController@logout');
+    Route::get('administrator/login', ['as' => 'administrator.login', 'uses' => 'Auth\AdminLoginController@getLogin']);
+    Route::post('administrator/login', ['as' => 'administrator.login', 'uses' => 'Auth\AdminLoginController@postLogin']);
+
