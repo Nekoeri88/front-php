@@ -1,77 +1,104 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <title>Ela - Bootstrap Admin Dashboard Template</title>
+    <!-- Bootstrap Core CSS -->
+    {!! Html::style('assets/css/lib/bootstrap/bootstrap.min.css') !!}
+    <!-- Custom CSS -->
+    {!! Html::style('assets/css/helper.css') !!}
+    {!! Html::style('assets/css/style.css') !!}
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
+    <!--[if lt IE 9]>
+    <script src="https:**oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https:**oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
 
-                <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
-                        {{ csrf_field() }}
+<body class="fix-header fix-sidebar">
+    <!-- Preloader - style you can find in spinners.css -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <!-- Main wrapper  -->
+    <div id="main-wrapper">
 
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Name</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
-
-                                @if ($errors->has('name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
+        <div class="unix-login">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="login-content card">
+                            <div class="login-form">
+                                <h4>Register</h4>
+                                @if (count($errors) > 0) 
+                                    @foreach ($errors->all() as $error) 
+                                    <div class="alert alert-micro alert-border-left alert-danger alert-dismissable">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                        <i class="fa fa-check pr10"></i>
+                                        {{ $error }}
+                                    </div>
+                                    @endforeach 
                                 @endif
+                                {!! Form::open(array('url' => URL::current(), 'method' => 'post', 'files'=> true)) !!}
+                                    <div class="form-group">
+                                        {!! Form::label('user_name', 'User name') !!}
+                                        {!! Form::text('name', '', array('class' => 'form-control', 'placeholder' => 'Enter your name')) !!}
+                                    </div>
+                                    <div class="form-group">
+                                        {!! Form::label('email', 'Email address') !!}
+                                        {!! Form::text('email', '', array('class' => 'form-control', 'placeholder' => 'Enter your email')) !!}
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        {!! Form::password('password',array('class' => 'form-control', 'placeholder' => 'Enter password')) !!}
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Confirm Password</label>
+                                        {!! Form::password('password_confirm',array('class' => 'form-control', 'placeholder' => 'Enter confirm password')) !!}
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                        <input type="checkbox"> Agree the terms and policy
+                                    </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Register</button>
+                                    <div class="register-link m-t-15 text-center">
+                                        <p>Already have account ? <a href="#"> Sign in</a></p>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Register
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
-</div>
-@endsection
+    <!-- End Wrapper -->
+    <!-- All Jquery -->
+    {{ HTML::script('assets/js/lib/jquery/jquery.min.js') }}
+    <!-- Bootstrap tether Core JavaScript -->
+    {{ HTML::script('assets/js/lib/bootstrap/js/popper.min.js') }}
+    {{ HTML::script('assets/js/lib/bootstrap/js/bootstrap.min.js') }}
+    <!-- slimscrollbar scrollbar JavaScript -->
+    {{ HTML::script('assets/js/jquery.slimscroll.js') }}
+    <!--Menu sidebar -->
+    {{ HTML::script('assets/js/sidebarmenu.js') }}
+    <!--stickey kit -->
+    {{ HTML::script('assets/js/lib/sticky-kit-master/dist/sticky-kit.min.js') }}
+    <!--Custom JavaScript -->
+    {{ HTML::script('assets/js/custom.min.js') }}
+
+</body>
+
+</html>
