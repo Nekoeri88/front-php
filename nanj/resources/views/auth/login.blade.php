@@ -40,22 +40,31 @@
                         <div class="login-content card">
                             <div class="login-form">
                                 <h4>Login</h4>
-                                <form>
+                                @if (count($errors) > 0) 
+                                        @foreach ($errors->all() as $error) 
+                                        <div class="alert alert-micro alert-border-left alert-danger alert-dismissable">
+                                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                            <i class="fa fa-check pr10"></i>
+                                            {{ $error }}
+                                        </div>
+                                        @endforeach 
+                                    @endif
+                                {!! Form::open(array('url' => URL::current(), 'method' => 'post', 'files'=> true)) !!}
                                     <div class="form-group">
-                                        <label>Email address</label>
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        {!! Form::label('email', 'Email address') !!}
+                                        {!! Form::text('email', '', array('class' => 'form-control', 'placeholder' => 'Enter your email')) !!}
                                     </div>
                                     <div class="form-group">
-                                        <label>Password</label>
-                                        <input type="password" class="form-control" placeholder="Password">
+                                        {!! Form::label('password', 'Password') !!}
+                                        <input type="password" name="password"  class="form-control" placeholder="Enter your Password">
                                     </div>
                                     <div class="checkbox">
                                         <label>
-        										<input type="checkbox"> Remember Me
-        									</label>
+    										<input type="checkbox"> Remember Me
+    									</label>
                                         <label class="pull-right">
-        										<a href="#">Forgotten Password?</a>
-        									</label>
+    										<a href="#">Forgotten Password?</a>
+    									</label>
 
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Sign in</button>
