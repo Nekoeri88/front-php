@@ -184,8 +184,9 @@
                     <h2>{{__('message.whitePaper')}}</h2>
                     <p><img src="/img/whitepaper_img_01.png" alt=""></p>
                     <ul>
-                      <li><a href="/white_paper.pdf" target="_blank"><img src="{{__('message.whitePaperJaButtonPlace')}}" alt="JAPANESE"></a></li>
+                      <li><a href="/white_paper.pdf" target="_blank"><img src="/img/whitepaper_btn_01.png" alt="日本語"></a></li>
                       <li><a href="/white_paper_en.pdf" target="_blank"><img src="/img/whitepaper_btn_02.png" alt="ENGLISH"></a></li>
+                      <li><a href="/white_paper_cn.pdf" target="_blank"><img src="/img/whitepaper_btn_03.png" alt="中文"></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4" id="wallet">

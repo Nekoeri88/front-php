@@ -36,7 +36,6 @@
             'Do you want to see new stage for the Fun and Sports relationship?<br>The NANJCOIN project will continue to increase its value steadily under the supervision of a professional marketing group with carefully planned and achievable steps.',
         'roadmapPlace' => '/img/roadmap_img_02.png',
         'roadmapPlaceSp' => '/img/roadmap_img_02_sp.png',
-        'whitePaperJaButtonPlace' => '/img/whitepaper_btn_03.png',
         'listingApprovalPlace' => '/img/listingapproval_img_02.png',
         'listingApprovalPlaceSp' => '/img/listingapproval_img_02_sp.png',
         'listingApprovalUntil' => 'Left',

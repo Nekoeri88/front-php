@@ -9915,6 +9915,116 @@ main .fadeInContents > .container.fadeIn {
 }
 
 /*------------------------------
+  ##member
+------------------------------*/
+#member {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+@media (max-width: 767.98px) {
+  #member {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+#member h2 {
+  font-family: 'Sarpanch', sans-serif;
+  -webkit-transform: scaleY(0.75);
+          transform: scaleY(0.75);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  letter-spacing: 0.12em;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 1em;
+  font-weight: normal;
+  text-align: center;
+}
+
+@media (max-width: 575.98px) {
+  #member h2 {
+    font-size: 35px;
+    line-height: 1em;
+  }
+}
+
+#member p {
+  margin-bottom: 30px;
+}
+
+#member ul {
+  margin: 0;
+  padding: 0;
+}
+
+#member ul li {
+  list-style: none;
+}
+
+#member ul li {
+  text-align: center;
+}
+
+#member ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+#member ul li dl dt {
+  margin-bottom: 0;
+}
+
+#member ul li dl dt img {
+  width: 100%;
+  max-width: 230px;
+  height: auto;
+}
+
+#member ul li dl dd.dd01 {
+  font-family: 'Sarpanch', sans-serif;
+  -webkit-transform: scaleY(0.75);
+          transform: scaleY(0.75);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  letter-spacing: 0.12em;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 1em;
+}
+
+#member ul li dl dd.dd02 {
+  font-family: 'Sarpanch', sans-serif;
+  -webkit-transform: scaleY(0.75);
+          transform: scaleY(0.75);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  letter-spacing: 0.12em;
+  font-size: 17px;
+  line-height: 1em;
+  color: #ffffff;
+}
+
+#member ul li dl dd.dd03 {
+  margin-bottom: 0;
+}
+
+#member ul li dl dd.dd03 span {
+  margin: 0 0.5em;
+  display: inline-block;
+}
+
+#member ul li dl dd.dd04 {
+  font-size: 12px;
+  line-height: 1.4em;
+}
+
+#member ul li dl dd:last-of-type {
+  margin-bottom: 0;
+}
+
+/*------------------------------
   #group01
 ------------------------------*/
 #group01 {
@@ -9968,7 +10078,7 @@ main .fadeInContents > .container.fadeIn {
 }
 
 #whitepaper p {
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 #whitepaper p img {
@@ -9985,7 +10095,7 @@ main .fadeInContents > .container.fadeIn {
 }
 
 #whitepaper ul li {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 #whitepaper ul li:last-of-type {
