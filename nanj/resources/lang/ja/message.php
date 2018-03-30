@@ -41,5 +41,34 @@ return [
     'listingApprovalPlaceSp' => '/img/listingapproval_img_01_sp.png',
     'listingApprovalUntil' => '上場まで',
     'cryptocurrencySymbol' => 'JPY',
+    'memberDescription' => '2018年3月14日、NANJ株式会社として発足しました。ファウンダーの森裕司を中心に、法務・開発・コインエンジニアなどの布陣で運営して参ります。',
+    'memberProfile01' => '
+      <dd class="dd03"><span>代表取締役CEO</span><span>森 裕司</span></dd>
+      <dd class="dd04">・右投げ/右打ち</dd>
+    ',
+    'memberProfile02' => '
+      <dd class="dd03"><span>代表取締役CEO&CFO</span><span>石 靖士</span></dd>
+      <dd class="dd04">・右投げ/右打ち</dd>
+    ',
+    'memberProfile03' => '
+      <dd class="dd03"><span>代表取締役CEO&CTO</span><span>小野良太</span></dd>
+      <dd class="dd04">・右投げ/左打ち</dd>
+    ',
+    'memberProfile04' => '
+      <dd class="dd03"><span>代表取締役CEO＆CMO</span><span>弘田大介</span></dd>
+      <dd class="dd04">・右投げ/右打ち</dd>
+    ',
+    'memberProfile05' => '
+      <dd class="dd03"><span>取締役CCO</span><span>向井利邦</span></dd>
+      <dd class="dd04">・右投げ/右打ち</dd>
+    ',
+    'memberProfile06' => '
+      <dd class="dd03"><span>取締役CIO</span><span>下川和人</span></dd>
+      <dd class="dd04">・右投げ/右打ち</dd>
+    ',
+    'memberProfile07' => '
+      <dd class="dd03"><span>取締役CBO</span><span>谷口征嗣</span></dd>
+      <dd class="dd04">・右投げ/右打ち</dd>
+    ',
 
 ];

@@ -41,6 +41,35 @@ return [
     'listingApprovalPlaceSp' => '/img/listingapproval_img_02_sp.png',
     'listingApprovalUntil' => 'Left',
     'cryptocurrencySymbol' => 'CNY',
+    'memberDescription' => '2018年3月14日、NANJ正式成立为上市公司。在以创始人森裕司为中心的、法务、开发、货币工程师等所组成的核心布局下开始运营。',
+    'memberProfile01' => '
+      <dd class="dd03"><span>法人代表CEO</span><span>森 裕司</span></dd>
+      <dd class="dd04">・右投/右打</dd>
+    ',
+    'memberProfile02' => '
+      <dd class="dd03"><span>法人代表CEO＆CFO</span><span>石 靖士</span></dd>
+      <dd class="dd04">・右投/右打</dd>
+    ',
+    'memberProfile03' => '
+      <dd class="dd03"><span>法人代表CEO＆CTO</span><span>小野良太</span></dd>
+      <dd class="dd04">・右投/左打</dd>
+    ',
+    'memberProfile04' => '
+      <dd class="dd03"><span>法人代表CEO＆CMO</span><span>弘田大介</span></dd>
+      <dd class="dd04">・右投/右打</dd>
+    ',
+    'memberProfile05' => '
+      <dd class="dd03"><span>董事CCO</span><span>向井利邦</span></dd>
+      <dd class="dd04">・右投/右打</dd>
+    ',
+    'memberProfile06' => '
+      <dd class="dd03"><span>董事CIO</span><span>下川和人</span></dd>
+      <dd class="dd04">・右投/右打</dd>
+    ',
+    'memberProfile07' => '
+      <dd class="dd03"><span>董事CBO</span><span>谷口征嗣</span></dd>
+      <dd class="dd04">・右投/右打</dd>
+    ',
     
 
 ];

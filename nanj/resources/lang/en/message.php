@@ -40,6 +40,35 @@
         'listingApprovalPlaceSp' => '/img/listingapproval_img_02_sp.png',
         'listingApprovalUntil' => 'Left',
         'cryptocurrencySymbol' => 'USD',
+        'memberDescription' => 'We founded the NANJ Corporation on March 14, 2018. With founder Yuzi Mori as our backbone, the company is being managed by a lineup of legal professionals, developers, and coin engineers.',
+        'memberProfile01' => '
+          <dd class="dd03"><span>Executive Director/CEO</span></dd>
+          <dd class="dd04">・Throws-Right/Bats-Right</dd>
+        ',
+        'memberProfile02' => '
+          <dd class="dd03"><span>Executive Director/CEO&CFO</span></dd>
+          <dd class="dd04">・Throws-Right/Bats-Right</dd>
+        ',
+        'memberProfile03' => '
+          <dd class="dd03"><span>Executive Director/CEO&CTO</span></dd>
+          <dd class="dd04">・Throws-Right/Bats-Left</dd>
+        ',
+        'memberProfile04' => '
+          <dd class="dd03"><span>Executive Director/CEO&CMO</span></dd>
+          <dd class="dd04">・Throws-Right/Bats-Right</dd>
+        ',
+        'memberProfile05' => '
+          <dd class="dd03"><span>Board Director/CCO</span></dd>
+          <dd class="dd04">・Throws-Right/Bats-Right</dd>
+        ',
+        'memberProfile06' => '
+          <dd class="dd03"><span>Board Director/CIO</span></dd>
+          <dd class="dd04">・Throws-Right/Bats-Right</dd>
+        ',
+        'memberProfile07' => '
+          <dd class="dd03"><span>Board Director/CBO</span></dd>
+          <dd class="dd04">・Throws-Right/Bats-Right</dd>
+        ',
 
 
     ];

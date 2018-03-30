@@ -177,6 +177,80 @@
             </div>
         </div>
     </div>
+    <div class="fadeInContents" id="member">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>MEMBER</h2>
+            <p>{{ __('message.memberDescription') }}</p>
+          </div>
+        </div>
+        <ul class="row">
+          <li class="col-md-3">
+            <dl>
+              <dt><img src="/img/member_img_01.png" alt="ORI 24"></dt>
+              <dd class="dd01">CEO</dd>
+              <dd class="dd02">YUZI MORI</dd>
+              {!! __('message.memberProfile01') !!}
+            </dl>
+          </li>
+          <li class="col-md-3">
+            <dl>
+              <dt><img src="/img/member_img_02.png" alt="ISHI 14"></dt>
+              <dd class="dd01">CEO&CFO</dd>
+              <dd class="dd02">YASUSHI ISHI</dd>
+              {!! __('message.memberProfile02') !!}
+            </dl>
+          </li>
+          <li class="col-md-3">
+            <dl>
+              <dt><img src="/img/member_img_03.png" alt="ONO 29"></dt>
+              <dd class="dd01">CEO&CTO</dd>
+              <dd class="dd02">RYOTA ONO</dd>
+              {!! __('message.memberProfile03') !!}
+            </dl>
+          </li>
+          <li class="col-md-3">
+            <dl>
+              <dt><img src="/img/member_img_04.png" alt="HIROTA 10"></dt>
+              <dd class="dd01">CEO&CMO</dd>
+              <dd class="dd02">DAISUKE HIROTA</dd>
+              {!! __('message.memberProfile04') !!}
+            </dl>
+          </li>
+        </ul>
+        <div class="row">
+          <div class="col-md-9 mx-md-auto">
+            <ul class="row">
+              <li class="col-md-4">
+                <dl>
+                  <dt><img src="/img/member_img_05.png" alt="MUKAI 3"></dt>
+                  <dd class="dd01">CCO</dd>
+                  <dd class="dd02">TOSHIKUNI MUKAI</dd>
+                  {!! __('message.memberProfile05') !!}
+                </dl>
+              </li>
+              <li class="col-md-4">
+                <dl>
+                  <dt><img src="/img/member_img_06.png" alt="SHIMOKAWA 37"></dt>
+                  <dd class="dd01">CIO</dd>
+                  <dd class="dd02">KAZUTO SHIMOKAWA</dd>
+                  {!! __('message.memberProfile06') !!}
+                </dl>
+              </li>
+              <li class="col-md-4">
+                <dl>
+                  <dt><img src="/img/member_img_07.png" alt="TANIGUCHI 17"></dt>
+                  <dd class="dd01">CBO</dd>
+                  <dd class="dd02">MASATSUGU TANIGUCHI</dd>
+                  {!! __('message.memberProfile07') !!}
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="fadeInContents" id="group01">
         <div class="container">
             <div class="row">
