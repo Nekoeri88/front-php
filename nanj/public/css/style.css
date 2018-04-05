@@ -9827,15 +9827,15 @@ main .fadeInContents > .container.fadeIn {
 }
 
 #about .allocation .glaph ul .li01:before, #about row01 .allocation .glaph ul .li01:before {
-  background: #ff6384;
+  background: #045e9b;
 }
 
 #about .allocation .glaph ul .li02:before, #about row01 .allocation .glaph ul .li02:before {
-  background: #ff9f40;
+  background: #087ccb;
 }
 
 #about .allocation .glaph ul .li03:before, #about row01 .allocation .glaph ul .li03:before {
-  background: #4bc0c0;
+  background: #fecc02;
 }
 
 #about .allocation .glaph ul .li04:before, #about row01 .allocation .glaph ul .li04:before {
@@ -9850,8 +9850,15 @@ main .fadeInContents > .container.fadeIn {
 }
 
 #about .allocation strong, #about row01 .allocation strong {
-  color: #fecc02;
   font-weight: normal;
+}
+
+#about .allocation strong.strong01, #about row01 .allocation strong.strong01 {
+  color: #ffffff;
+}
+
+#about .allocation strong.strong02, #about row01 .allocation strong.strong02 {
+  color: #fecc02;
 }
 
 #about .row02 p {

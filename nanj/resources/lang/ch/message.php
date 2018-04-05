@@ -32,7 +32,8 @@ return [
     'nanjMean' => '<strong>N</strong>EXT-GENERATION <strong>A</strong>THLETE <strong>N</strong>ETWORK <strong>J</strong>OINT',
     'nanjMean2' => '<strong>E</strong>THEREUM <strong>E</strong>RC223 <strong>T</strong>OKEN <strong>F</strong>ULLY <strong>C</strong>OMPATIBLE <strong>W</strong>ITH <strong>E</strong>RC20 <strong>T</strong>OKEN <strong>S</strong>TANDARD',
     'assignDescription' =>
-        '目前市面上虚拟货币的运营团队，所持有的代币分配率基本是不透明的，或是持有数超过一半。所以我们将NANJCOIN运营团队的所持代币配额定为<strong>全体的10%。</strong>这种分配的优点是确保了运营的透明性，并且即使运营团队把所持代币全部抛售，也不会因为超过发行数的一半而使NANJCOIN的市场价格崩溃。当然我们保证这种扰乱市场价格的行为绝不会发生。这种分配模式是我们的双重价格保护措施。我们将在预售时发售相当于总发行数60%的180亿NANJCOIN。预售结束后，未售出的代币将被销毁或禁止交易。',
+        '目前市面上虚拟货币的「运营团队」所持有的代币的分配率基本都是不透明的，或是持有数超过一半。所以我们将NANJCOIN运营团队的所持代币配额定为<strong class="strong01">全体的10%。</strong>这种分配的优点是确保了运营的透明性，并且即使运营团队把所持代币全部抛售，也不会因为超过发行数的一半而NANJCOIN的市场价格崩溃。通过2018年3月的开售现已售出总发行量的60%的代币。另外，<strong class="strong02">我们决定于2018年5月1日起一年之内锁定占总发行量15%的开发费。</strong>今后，例如锁定代币、烧币、卖出市场等会对价格产生影响的重要通告会在执行日的前一个月进行通知。
+',
     'roadMapDescription' =>
         '想看看粉丝与体育竞技的互动新境界吗？NANJCOIN计划在专业开发与营销团体的监督指导之下，坚实地踏出实现可能的每一步，造就更高的自身价值。',
     'roadmapPlace' => '/img/roadmap_img_03.png',

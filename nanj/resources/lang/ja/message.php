@@ -32,7 +32,7 @@ return [
     'nanjMean' => '<strong>N</strong>EXT-GENERATION <strong>A</strong>THLETE <strong>N</strong>ETWORK <strong>J</strong>OINT',
     'nanjMean2' => '<strong>E</strong>THEREUM <strong>E</strong>RC223 <strong>T</strong>OKEN <strong>F</strong>ULLY <strong>C</strong>OMPATIBLE <strong>W</strong>ITH <strong>E</strong>RC20 <strong>T</strong>OKEN <strong>S</strong>TANDARD',
     'assignDescription' =>
-        '今までの仮想通貨は「運営チーム」の所持割合が不透明なもの、過半数を所持しているようなものが大半でした。そこでNANJCOIN運営チームの所持割合を<strong>全体の1割としました。</strong>これによるメリットは透明性の確保、そして仮に運営チームが売り抜けたとしても過半数を超えていない為相場が崩壊しません。もちろん一気に売り抜けて相場を乱すような行為はしないと明言した上で、二重の対策となります。オープン戦では総発行量の60％に当たる180億NANJを販売する予定です。オープン戦終了後、売れ残ったトークンについてBurnやロックアップを実施します。',
+        '今までの仮想通貨は「運営チーム」の所持割合が不透明なもの、過半数を所持しているようなものが大半でした。そこでNANJCOIN運営チームの所持割合を<strong class="strong01">全体の1割としました。</strong>これによるメリットは透明性の確保、そして仮に運営チームが売り抜けたとしても過半数を超えていない為相場が崩壊しません。2018年3月のオープン戦ですでに60％のトークンが市場に放出されています。また、<strong class="strong02">発行量の15%を占める開発費を2018年5月1日から1年間ロックアップします。</strong>今後もロックアップ、バーン、市場売却など価格に影響を及ぼす重要な報告は実行日の約1ヶ月前に告知する予定です。',
     'roadMapDescription' =>
         'ファンとスポーツの関わり方について、新たなステージを見てみたいとは思いませんか？NANJCOINプロジェクトはプロのマーケティング集団監修のもと、実現可能なステップを進めながら着実に価値を高め続けます。',
     'roadmapPlace' => '/img/roadmap_img_01.png',
