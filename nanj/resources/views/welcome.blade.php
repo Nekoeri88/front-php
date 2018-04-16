@@ -191,7 +191,7 @@
             <dl>
               <dt><img src="/img/member_img_01.png" alt="ORI 24"></dt>
               <dd class="dd01">CEO</dd>
-              <dd class="dd02">YUZI MORI</dd>
+              <dd class="dd02">YUJI MORI</dd>
               {!! __('message.memberProfile01') !!}
             </dl>
           </li>
