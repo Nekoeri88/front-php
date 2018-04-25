@@ -266,7 +266,7 @@
                 </div>
                 <div class="col-lg-4" id="wallet">
                     <h2>{{__('message.wallet')}}</h2>
-                    <p class="mew"><a href="https://www.myetherwallet.com" target="_blank"><img src="/img/wallet_btn_01.png" alt="MyEtherWallet"></a></p>
+                    <!-- <p class="mew"><a href="https://www.myetherwallet.com" target="_blank"><img src="/img/wallet_btn_01.png" alt="MyEtherWallet"></a></p> -->
                     <div class="hbWallet">
                       <h3><img src="/img/wallet_img_01.png" alt="HB Wallet"></h3>
                       <ul class="clearfix">
